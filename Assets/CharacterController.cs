@@ -1,120 +1,170 @@
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
-    public float dashSpeed = 10f;
-    public float dashDistance = 0.5f; // Distance to dash
+    // Movement parameters
+    public float moveSpeed = 5f;
+
+    // Dash parameters
+    public float dashDistance = 1.3f;
+    public float dashDuration = 0.1f;
+    public float dashCooldown = 0.5f;
+    public float dashDelay = 0.2f; // Delay before can press dash again
+    private bool isDashing = false;
+    private bool isCooldown = false;
+    private bool canDash = true;
+    private float dashTimer = 0f;
+    private float cooldownTimer = 0f;
+    private float delayTimer = 0f;
+    private Vector2 dashTarget;
+
+    // Jump parameters
+    public float jumpForce = 400f; // Adjusted for AddForce
+
+    // General parameters
+    private bool isGrounded = false;
+
     private Animator animator;
     private Rigidbody2D rb;
-    private bool isDashing = false;
-    private float dashTime = 0.3f; // Duration of the dash in seconds
-    private float dashTimer = 0f;
-    private Vector2 dashDirection;
-
-    // Jump variables
-    private bool isJumping = false;
-    private float jumpDuration = 3f;
-    private float jumpFrameTime = 1.5f;
-    private float jumpTimer = 0f;
+    private Vector2 movement;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        Debug.Log("Rigidbody2D mass: " + rb.mass);
+        Debug.Log("Rigidbody2D gravity scale: " + rb.gravityScale);
     }
 
     void Update()
     {
-        // Get horizontal movement input
-        float move = Input.GetAxis("Horizontal");
+        // Handle input
+        movement.x = Input.GetAxisRaw("Horizontal");
 
-        // Check if the dash key (J) is pressed and the character is moving
-        if (Input.GetKeyDown(KeyCode.J) && !isDashing && move != 0)
+        // Set animation parameters
+        if (movement != Vector2.zero && !isDashing)
         {
-            isDashing = true;
-            dashTimer = dashTime;
+            animator.SetFloat("Speed", Mathf.Abs(movement.x));
 
-            // Determine the dash direction based on the current facing direction
-            if (transform.localScale.x > 0)
+            // Flip the character based on the direction
+            if (movement.x < 0)
             {
-                dashDirection = Vector2.right;
-                animator.SetBool("IsDashingRight", true);
+                spriteRenderer.flipX = true;
             }
-            else
+            else if (movement.x > 0)
             {
-                dashDirection = Vector2.left;
-                animator.SetBool("IsDashingLeft", true);
-            }
-        }
-
-        // Set the velocity of the Rigidbody2D
-        if (isDashing)
-        {
-            rb.linearVelocity = dashDirection * dashSpeed;
-            dashTimer -= Time.deltaTime;
-            if (dashTimer <= 0)
-            {
-                isDashing = false;
-                animator.SetBool("IsDashingRight", false);
-                animator.SetBool("IsDashingLeft", false);
-                rb.linearVelocity = Vector2.zero; // Stop the character after dashing
-            }
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(move * speed, rb.linearVelocity.y);
-        }
-
-        // Check if the character is moving
-        if (move != 0 && !isDashing)
-        {
-            animator.SetBool("IsRunning", true);
-            animator.SetBool("IsStopping", false);
-
-            // Flip the character sprite based on the direction of movement
-            if (move < 0)
-            {
-                transform.localScale = new Vector3(-1, 1, 1); // Face left
-            }
-            else if (move > 0)
-            {
-                transform.localScale = new Vector3(1, 1, 1); // Face right
+                spriteRenderer.flipX = false;
             }
         }
         else if (!isDashing)
         {
-            animator.SetBool("IsRunning", false);
-            animator.SetBool("IsStopping", true);
+            animator.SetFloat("Speed", 0);
         }
 
-        // Handle jump input and animation
-        if (Input.GetKeyDown(KeyCode.Space) && !isJumping)
+        // Handle dash input
+        if (Input.GetKeyDown(KeyCode.J) && !isDashing && movement.x != 0 && canDash)
         {
-            isJumping = true;
-            jumpTimer = 0f;
-            animator.SetBool("IsJumping", true);
-            animator.SetBool("JumpFrame1", true);
-            animator.SetBool("JumpFrame2", false);
+            if (isCooldown)
+            {
+                dashDistance = 0.5f;
+                cooldownTimer = dashCooldown; // Reset cooldown to 1 second
+            }
+            else
+            {
+                dashDistance = 1.3f;
+                isCooldown = true;
+                cooldownTimer = dashCooldown;
+            }
+
+            isDashing = true;
+            dashTimer = dashDuration;
+            canDash = false;
+            delayTimer = dashDelay;
+            animator.SetBool("IsDashing", true);
+
+            // Set dash direction based on character's facing direction
+            if (spriteRenderer.flipX)
+            {
+                dashTarget = rb.position + Vector2.left * dashDistance;
+                animator.SetBool("IsDashingLeft", true);
+                animator.SetBool("IsDashingRight", false);
+            }
+            else
+            {
+                dashTarget = rb.position + Vector2.right * dashDistance;
+                animator.SetBool("IsDashingLeft", false);
+                animator.SetBool("IsDashingRight", true);
+            }
         }
 
-        if (isJumping)
+        // Update dash timer
+        if (isDashing)
         {
-            jumpTimer += Time.deltaTime;
-
-            if (jumpTimer >= jumpFrameTime)
+            dashTimer -= Time.deltaTime;
+            if (dashTimer <= 0 || Vector2.Distance(rb.position, dashTarget) < 0.1f)
             {
-                animator.SetBool("JumpFrame1", false);
-                animator.SetBool("JumpFrame2", true);
+                isDashing = false;
+                animator.SetBool("IsDashing", false);
+                animator.SetBool("IsDashingLeft", false);
+                animator.SetBool("IsDashingRight", false);
             }
+        }
 
-            if (jumpTimer >= jumpDuration || Input.GetKeyUp(KeyCode.Space))
+        // Update cooldown timer
+        if (isCooldown)
+        {
+            cooldownTimer -= Time.deltaTime;
+            if (cooldownTimer <= 0)
             {
-                isJumping = false;
-                animator.SetBool("IsJumping", false);
-                animator.SetBool("JumpFrame1", false);
-                animator.SetBool("JumpFrame2", false);
+                isCooldown = false;
             }
+        }
+
+        // Update delay timer
+        if (!canDash)
+        {
+            delayTimer -= Time.deltaTime;
+            if (delayTimer <= 0)
+            {
+                canDash = true;
+            }
+        }
+
+        // Handle jump input
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isGrounded)
+            {
+                Debug.Log("Jumping");
+                rb.AddForce(Vector2.up * jumpForce);
+                isGrounded = false;
+            }
+        }
+    }
+
+    void FixedUpdate()
+    {
+        // Move the player
+        if (isDashing)
+        {
+            Vector2 newPosition = Vector2.MoveTowards(rb.position, dashTarget, dashDistance / dashDuration * Time.fixedDeltaTime);
+            rb.MovePosition(newPosition);
+        }
+        else
+        {
+            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+            animator.SetBool("IsJumping", false);
         }
     }
 }
