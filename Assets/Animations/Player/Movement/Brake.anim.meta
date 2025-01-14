@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Animations/Player/Movement/Brake.anim.meta
 guid: dc4b15017c754a04cbe37c0854ee805e
+========
+guid: b95c36fd334b6d74fbdcf911948b0f8b
+>>>>>>>> 2c78e3d740debbbba7e2a9cb8772f4b6a2c90d73:Assets/Animations/Player/Movement/Lea_Jump_Falling.anim.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 7400000
