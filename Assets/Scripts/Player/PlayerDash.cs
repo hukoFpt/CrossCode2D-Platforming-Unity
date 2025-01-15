@@ -1,12 +1,7 @@
-using System;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerDash : MonoBehaviour
 {
-    // Movement parameters
-    public float moveSpeed = 5f;
-
-    // Dash parameters
     public float dashDistance = 1.3f;
     public float dashDuration = 0.1f;
     public float dashCooldown = 0.5f;
@@ -18,60 +13,25 @@ public class PlayerController : MonoBehaviour
     private float cooldownTimer = 0f;
     private float delayTimer = 0f;
     private Vector2 dashTarget;
-
-    // Jump parameters
-    public float jumpForce = 400f; // Adjusted for AddForce
-
-    // General parameters
-    private bool isGrounded = false;
-
-    private Animator animator;
     private Rigidbody2D rb;
-    private Vector2 movement;
+    private Animator animator;
     private SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        Debug.Log("Rigidbody2D mass: " + rb.mass);
-        Debug.Log("Rigidbody2D gravity scale: " + rb.gravityScale);
     }
 
-    void Update()
+    public void HandleDash()
     {
-        // Handle input
-        movement.x = Input.GetAxisRaw("Horizontal");
-
-        // Set animation parameters
-        if (movement != Vector2.zero && !isDashing)
-        {
-            animator.SetFloat("Speed", Mathf.Abs(movement.x));
-
-            // Flip the character based on the direction
-            if (movement.x < 0)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (movement.x > 0)
-            {
-                spriteRenderer.flipX = false;
-            }
-        }
-        else if (!isDashing)
-        {
-            animator.SetFloat("Speed", 0);
-        }
-
-        // Handle dash input
-        if (Input.GetKeyDown(KeyCode.J) && !isDashing && movement.x != 0 && canDash)
+        if (Input.GetKeyDown(KeyCode.J) && !isDashing && canDash)
         {
             if (isCooldown)
             {
                 dashDistance = 0.5f;
-                cooldownTimer = dashCooldown; // Reset cooldown to 1 second
+                cooldownTimer = dashCooldown;
             }
             else
             {
@@ -86,7 +46,6 @@ public class PlayerController : MonoBehaviour
             delayTimer = dashDelay;
             animator.SetBool("IsDashing", true);
 
-            // Set dash direction based on character's facing direction
             if (spriteRenderer.flipX)
             {
                 dashTarget = rb.position + Vector2.left * dashDistance;
@@ -101,7 +60,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Update dash timer
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
@@ -114,7 +72,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Update cooldown timer
         if (isCooldown)
         {
             cooldownTimer -= Time.deltaTime;
@@ -124,7 +81,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Update delay timer
         if (!canDash)
         {
             delayTimer -= Time.deltaTime;
@@ -133,47 +89,14 @@ public class PlayerController : MonoBehaviour
                 canDash = true;
             }
         }
-
-        // Handle jump input
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (isGrounded)
-            {
-                animator.SetBool("IsJumping", true);
-                rb.AddForce(Vector2.up * jumpForce);
-                isGrounded = false;
-            }
-        }
-        if (isGrounded)
-        {
-            animator.SetFloat("yVelocity", 0f);
-        }
-        else
-        {
-            animator.SetFloat("yVelocity", rb.linearVelocity.y);
-        }
     }
 
-    void FixedUpdate()
+    public void FixedHandleDash()
     {
-        // Move the player
         if (isDashing)
         {
             Vector2 newPosition = Vector2.MoveTowards(rb.position, dashTarget, dashDistance / dashDuration * Time.fixedDeltaTime);
             rb.MovePosition(newPosition);
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-            animator.SetBool("IsJumping", false);
         }
     }
 }

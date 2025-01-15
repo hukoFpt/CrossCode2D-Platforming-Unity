@@ -176,6 +176,65 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6310ff3422a73a04ca83da3198228cfb, type: 3}
+--- !u!1 &164804124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+  m_PrefabInstance: {fileID: 7762585762823614541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &164804133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164804124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beffdf82a4db9334a9f9e8e83b329de0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &164804134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164804124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1faa688c18a614f9289d6161d7300c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 400
+--- !u!114 &164804135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164804124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6e5857b4ba2a324c876edfd8b20401e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDistance: 1.3
+  dashDuration: 0.1
+  dashCooldown: 0.5
+  dashDelay: 0.2
+--- !u!114 &164804136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164804124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0965f568e5e4e094a91457f3dc131a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,10 +508,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lea
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4086473609515314622, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164804136}
+    - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164804135}
+    - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164804134}
+    - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164804133}
   m_SourcePrefab: {fileID: 100100000, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
