@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float dashDistance = 1.3f;
     public float dashDuration = 0.1f;
     public float dashCooldown = 0.5f;
-    public float dashDelay = 0.2f; // Delay before can press dash again
+    public float dashDelay = 0.2f;
     private bool isDashing = false;
     private bool isCooldown = false;
     private bool canDash = true;
@@ -138,10 +139,18 @@ public class PlayerController : MonoBehaviour
         {
             if (isGrounded)
             {
-                Debug.Log("Jumping");
+                animator.SetBool("IsJumping", true);
                 rb.AddForce(Vector2.up * jumpForce);
                 isGrounded = false;
             }
+        }
+        if (isGrounded)
+        {
+            animator.SetFloat("yVelocity", 0f);
+        }
+        else
+        {
+            animator.SetFloat("yVelocity", rb.linearVelocity.y);
         }
     }
 
@@ -155,7 +164,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+            rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
         }
     }
 
