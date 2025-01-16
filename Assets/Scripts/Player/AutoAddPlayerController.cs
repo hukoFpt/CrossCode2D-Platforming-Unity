@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerDash))]
 [RequireComponent(typeof(PlayerJump))]
+[RequireComponent(typeof(PlayerAttack))]
 public class AutoAddComponents : MonoBehaviour
 {
     void Awake()
@@ -31,5 +32,8 @@ public class AutoAddComponents : MonoBehaviour
 
         if (GetComponent<PlayerJump>() == null)
             gameObject.AddComponent<PlayerJump>();
+
+        if (GetComponent<PlayerAttack>() == null)
+            gameObject.AddComponent<PlayerAttack>();
     }
 }

@@ -235,6 +235,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &164804143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164804124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0947bb146a8bf61459dad59dab479bc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +477,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 639714075457784413, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3328429356336001038, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.29
@@ -525,6 +542,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
       insertIndex: -1
       addedObject: {fileID: 164804133}
+    - targetCorrespondingSourceObject: {fileID: 5293813487083220508, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 164804143}
   m_SourcePrefab: {fileID: 100100000, guid: 7f8578a74ae0cdc4ea2557759ff7f993, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
