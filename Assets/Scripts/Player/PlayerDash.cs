@@ -26,7 +26,7 @@ public class PlayerDash : MonoBehaviour
 
     public void HandleDash()
     {
-        if (Input.GetKeyDown(KeyCode.J) && !isDashing && canDash)
+        if (Input.GetKeyDown(KeyCode.J) && !isDashing && animator.GetFloat("Speed")>0)
         {
             if (isCooldown)
             {

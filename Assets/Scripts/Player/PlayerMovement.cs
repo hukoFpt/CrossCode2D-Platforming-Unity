@@ -7,12 +7,37 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movement;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private bool canMove = true; // Flag to control movement
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if (canMove)
+        {
+            HandleMovement();
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0); // Ensure the speed is set to 0 when movement is disabled
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (canMove)
+        {
+            FixedHandleMovement();
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Stop horizontal movement when movement is disabled
+        }
     }
 
     public void HandleMovement()
@@ -41,5 +66,15 @@ public class PlayerMovement : MonoBehaviour
     public void FixedHandleMovement()
     {
         rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
+    }
+
+    public void EnableMovement()
+    {
+        canMove = true;
+    }
+
+    public void DisableMovement()
+    {
+        canMove = false;
     }
 }
