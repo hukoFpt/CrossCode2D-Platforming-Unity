@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         playerMovement = GetComponent<PlayerMovement>();
         playerDash = GetComponent<PlayerDash>();
         playerJump = GetComponent<PlayerJump>();
