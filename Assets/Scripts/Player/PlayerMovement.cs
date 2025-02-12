@@ -70,11 +70,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void EnableMovement()
     {
-        canMove = true;
+        moveSpeed = 5f;
     }
 
     public void DisableMovement()
     {
-        canMove = false;
+        moveSpeed = 1.5f;
     }
 }

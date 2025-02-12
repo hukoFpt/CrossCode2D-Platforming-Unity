@@ -15,8 +15,8 @@ public class PlayerAttack : MonoBehaviour
     private int attackCounter = 0;
     private float lastAttackTime = 0f;
 
-    public float slideDistance = 1.2f;
-    public float slideDuration = 0.4f;
+    public float slideDistance = 0.6f;
+    public float slideDuration = 0.3f;
 
     public float attackSpeed;
     private float GetAttackSpeed(string element)
@@ -71,7 +71,7 @@ public class PlayerAttack : MonoBehaviour
 
             // Disable movement during attack
             playerMovement.DisableMovement();
-            StartCoroutine(EnableMovementAfterDelay(1f)); // Re-enable movement after 1 second
+            StartCoroutine(EnableMovementAfterDelay(0.3f)); // Re-enable movement after 1 second
 
             switch (attackCounter)
             {
