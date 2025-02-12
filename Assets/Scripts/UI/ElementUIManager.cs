@@ -9,17 +9,16 @@ public class ElementUIManager: MonoBehaviour
     public Sprite shockIcon;
     public Sprite waveIcon;
 
-    private Player player;
+    private Player Player => FindFirstObjectByType<Player>();
 
     void Start()
     {
-        player = FindFirstObjectByType<Player>();
         UpdateElementSprite();
     }
 
     public void UpdateElementSprite()
     {
-        switch (player.currentElement)
+        switch (Player.currentElement)
         {
             case "Neutral":
                 GetComponent<Image>().sprite = neutralIcon;

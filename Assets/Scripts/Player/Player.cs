@@ -22,11 +22,14 @@ public class Player : MonoBehaviour
             { KeyCode.Alpha3, "Shock" },      // `3` key
             { KeyCode.Alpha4, "Wave" }        // `4` key
         };
+
+        uiManager = FindFirstObjectByType<ElementUIManager>();
     }
 
     void Update()
     {
         HandleElementChange();
+        uiManager.UpdateElementSprite();
     }
 
     public void ChangeElement(string newElement)
