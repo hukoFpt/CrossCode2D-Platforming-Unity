@@ -60,10 +60,10 @@ public class AttackEffectController : MonoBehaviour
         animator.Play("Attack" + Element, 0, 0f);
 
         spriteRenderer.enabled = true;
-        StartCoroutine(EnableColliderForOneFrame());
+        StartCoroutine(EnableColliderForFrame());
     }
 
-    private IEnumerator EnableColliderForOneFrame()
+    private IEnumerator EnableColliderForFrame()
     {
         attackCollider.enabled = true;
         for (int i = 0; i < 5; i++)
@@ -77,10 +77,11 @@ public class AttackEffectController : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            JungleShockcat enemy = collision.GetComponent<JungleShockcat>();
+            JungleShockcatController enemy = collision.GetComponent<JungleShockcatController>();
             if (enemy != null)
             {
-                enemy.TakeDamage(attackDamage);
+                Vector2 attackDirection = (collision.transform.position - transform.position).normalized;
+                enemy.TakeDamage(attackDamage, attackDirection);
                 Debug.Log($"Player attacked {enemy.name} and dealt {attackDamage} damage.");
             }
         }
