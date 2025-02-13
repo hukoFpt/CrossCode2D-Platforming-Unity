@@ -4,11 +4,14 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour
 {
     public string currentElement = "Neutral";
+    public string currentStyle = "Melee";
+
     public float currentHP = 1200f;
     public float maxHP = 1200f;
 
     private ElementUIManager uiManager;
     private PlayerHealthBar healthBar;
+    private StyleUIManager style;
 
     private Dictionary<KeyCode, string> elementKeyMap;
 
@@ -26,6 +29,7 @@ public class Player : MonoBehaviour
 
         uiManager = FindFirstObjectByType<ElementUIManager>();
         healthBar = FindFirstObjectByType<PlayerHealthBar>();
+        style = FindFirstObjectByType<StyleUIManager>();
     }
 
     public void TakeDamage(float damage)
@@ -49,11 +53,18 @@ public class Player : MonoBehaviour
         healthBar.UpdateHealth( currentHP, maxHP);
         HandleElementChange();
         uiManager.UpdateElementSprite();
+        HandleStyleChange();
+        style.UpdatePlayerStyle();
     }
 
     public void ChangeElement(string newElement)
     {
         currentElement = newElement;
+    }
+
+    public void ChangeStyle(string  newStyle)
+    {
+        currentStyle = newStyle;
     }
 
     private void HandleElementChange()
@@ -71,6 +82,14 @@ public class Player : MonoBehaviour
                 ChangeElement(currentElement == entry.Value ? "Neutral" : entry.Value);
                 break;
             }
+        }
+    }
+
+    private void HandleStyleChange()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            ChangeStyle(currentStyle == "Melee" ? "Throw" : "Melee");
         }
     }
 }
