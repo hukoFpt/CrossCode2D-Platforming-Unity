@@ -4,10 +4,11 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour
 {
     public string currentElement = "Neutral";
-    public float currentHP = 100f;
-    public float maxHP = 100f;
+    public float currentHP = 1200f;
+    public float maxHP = 1200f;
 
     private ElementUIManager uiManager;
+    private PlayerHealthBar healthBar;
 
     private Dictionary<KeyCode, string> elementKeyMap;
 
@@ -24,10 +25,28 @@ public class Player : MonoBehaviour
         };
 
         uiManager = FindFirstObjectByType<ElementUIManager>();
+        healthBar = FindFirstObjectByType<PlayerHealthBar>();
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHP -= damage;
+        if (currentHP <= 0)
+        {
+            Die();
+        }
+        healthBar.UpdateHealth(currentHP, maxHP);
+    }
+
+    private void Die()
+    {
+        // Handle player death logic here
+        Debug.Log("Player has died.");
     }
 
     void Update()
     {
+        healthBar.UpdateHealth( currentHP, maxHP);
         HandleElementChange();
         uiManager.UpdateElementSprite();
     }

@@ -12,6 +12,10 @@ public class JungleShockcatController : MonoBehaviour
     public float currentHP;
     public float knockbackForce = 5f; // Force applied for knockback
     public GameObject healthBarPrefab;
+    public float attackRange = 2f; // Range to detect the player for attack
+    public float preAttackDuration = 0.8f; // Duration of the PreAttack animation
+    public float teleportDistance = 4f; // Distance to teleport during attack
+    public float attackCooldown = 3f; // Cooldown duration for the attack
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -22,6 +26,8 @@ public class JungleShockcatController : MonoBehaviour
     private bool isStopped;
     private Color originalColor;
     private HealthBar healthBar;
+    private Transform playerTransform;
+    private bool isOnCooldown;
 
     void Start()
     {
@@ -30,7 +36,6 @@ public class JungleShockcatController : MonoBehaviour
         {
             rb = gameObject.AddComponent<Rigidbody2D>();
         }
-        rb.bodyType = RigidbodyType2D.Dynamic;
 
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -46,6 +51,8 @@ public class JungleShockcatController : MonoBehaviour
         GameObject healthBarInstance = Instantiate(healthBarPrefab, transform.position, Quaternion.identity);
         healthBar = healthBarInstance.GetComponent<HealthBar>();
         healthBar.Initialize(transform);
+
+        playerTransform = GameObject.FindGameObjectWithTag("Player").transform; // Find the player by tag
     }
 
     void Update()
@@ -61,6 +68,8 @@ public class JungleShockcatController : MonoBehaviour
 
         animator.SetBool("isWalking", walkDirection != Vector2.zero);
         healthBar.UpdateHealth(currentHP, maxHP);
+
+        CheckForPlayerAndAttack();
     }
 
     void FixedUpdate()
@@ -152,8 +161,12 @@ public class JungleShockcatController : MonoBehaviour
     private void ApplyKnockback(Vector2 attackDirection)
     {
         // Apply knockback force in the opposite direction of the attack
+        Debug.Log("Applying knockback force. Direction: " + attackDirection + ", Force: " + knockbackForce);
         rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Reset horizontal velocity
-        rb.AddForce(-attackDirection.normalized * knockbackForce, ForceMode2D.Impulse);
+
+        // Apply knockback force only along the x-axis
+        Vector2 knockback = new Vector2(-attackDirection.x, 0).normalized * knockbackForce;
+        rb.AddForce(knockback, ForceMode2D.Impulse);
     }
 
     private void Die()
@@ -162,5 +175,69 @@ public class JungleShockcatController : MonoBehaviour
         Debug.Log("JungleShockcat has died.");
         healthBar.gameObject.SetActive(false);
         gameObject.SetActive(false);
+    }
+
+    private void CheckForPlayerAndAttack()
+    {
+        if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackRange && isOnCooldown == false)
+        {
+            StartCoroutine(PerformAttack());
+        }
+    }
+
+    private IEnumerator PerformAttack()
+    {
+        isStopped = true;
+        isOnCooldown = true;
+
+        // Face the player before performing the attack
+        if (playerTransform != null)
+        {
+            if (playerTransform.position.x < transform.position.x)
+            {
+                walkDirection = Vector2.left;
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                walkDirection = Vector2.right;
+                spriteRenderer.flipX = false;
+            }
+        }
+
+        animator.SetTrigger("PreAttack");
+        yield return new WaitForSeconds(preAttackDuration);
+        animator.SetBool("isAttacking", true);
+
+        // Calculate the new position after teleporting
+        Vector2 originalPosition = transform.position;
+        Vector2 newPosition = originalPosition + (spriteRenderer.flipX ? Vector2.left : Vector2.right) * teleportDistance;
+
+        // Check if the player is between the original and new positions
+        if (playerTransform != null)
+        {
+            float playerPositionX = playerTransform.position.x;
+            float playerPositionY = playerTransform.position.y;
+            if (((originalPosition.x < playerPositionX && playerPositionX < newPosition.x) ||
+                (newPosition.x < playerPositionX && playerPositionX < originalPosition.x)) &&
+                Mathf.Abs(playerPositionY - transform.position.y) <= 1f)
+            {
+                Debug.Log("Player hit by JungleShockcat attack.");
+                Player player = playerTransform.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.TakeDamage(10f);
+                }
+            }
+        }
+
+        // Teleport to the new position
+        transform.position = newPosition;
+        yield return new WaitForSeconds(0.1f);
+        animator.SetBool("isAttacking", false);
+        isStopped = false;
+
+        yield return new WaitForSeconds(attackCooldown);
+        isOnCooldown = false;
     }
 }

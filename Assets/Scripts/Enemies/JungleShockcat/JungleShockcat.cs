@@ -19,7 +19,7 @@ public class JungleShockcat : MonoBehaviour
         {
             rb = gameObject.AddComponent<Rigidbody2D>();
         }
-        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.bodyType = RigidbodyType2D.Dynamic;
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
