@@ -1,43 +1,36 @@
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 
-public class PlayerController : MonoBehaviour
+namespace CrossCode2D.Player
 {
-    private int movementLayerIndex;
-    private int combatLayerIndex;
-
-    private Animator animator;
-    private PlayerMovement playerMovement;
-    private PlayerDash playerDash;
-    private PlayerJump playerJump;
-    private PlayerAttack playerAttack;
-
-    void Start()
+    public class PlayerController : MonoBehaviour
     {
-        animator = GetComponent<Animator>();
+        private int movementLayerIndex;
+        private int combatLayerIndex;
 
-        playerMovement = GetComponent<PlayerMovement>();
-        playerDash = GetComponent<PlayerDash>();
-        playerJump = GetComponent<PlayerJump>();
-        playerAttack = GetComponent<PlayerAttack>();
+        private Animator animator;
+        private HandleMovement handleMovement;
+        private HandleAttack handleAttack;
 
-        movementLayerIndex = animator.GetLayerIndex("Movement");
-        combatLayerIndex = animator.GetLayerIndex("Combat");
+        void Start()
+        {
+            animator = GetComponent<Animator>();
+            handleMovement = GetComponent<HandleMovement>();
+            handleAttack = GetComponent<HandleAttack>();
 
-        animator.SetLayerWeight(movementLayerIndex, 1);
-        animator.SetLayerWeight(combatLayerIndex, 1);
-    }
+            movementLayerIndex = animator.GetLayerIndex("Movement");
+            combatLayerIndex = animator.GetLayerIndex("Combat");
 
-    void Update()
-    {
-        playerMovement.HandleMovement();
-        playerDash.HandleDash();
-        playerJump.HandleJump();
-        playerAttack.HandleAttack();
-    }
+            animator.SetLayerWeight(movementLayerIndex, 1);
+            animator.SetLayerWeight(combatLayerIndex, 1);
+        }
 
-    void FixedUpdate()
-    {
-        playerMovement.FixedHandleMovement();
-        playerDash.FixedHandleDash();
+        void Update()
+        {
+        }
+
+        void FixedUpdate()
+        {
+        }
     }
 }

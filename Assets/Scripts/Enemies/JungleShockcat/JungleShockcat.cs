@@ -1,35 +1,38 @@
 using UnityEngine;
 
-public class JungleShockcat : MonoBehaviour
+namespace CrossCode2D.Enemies
 {
-    public float maxHP = 100f;
-    public float currentHP;
-
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
-    private Color originalColor;
-
-    void Start()
+    public class JungleShockcat : MonoBehaviour
     {
-        // Initialize health
-        currentHP = maxHP;
+        public float maxHP = 100f;
+        public float currentHP;
 
-        rb = GetComponent<Rigidbody2D>();
-        if (rb == null)
+        private Rigidbody2D rb;
+        private SpriteRenderer spriteRenderer;
+        private Color originalColor;
+
+        void Start()
         {
-            rb = gameObject.AddComponent<Rigidbody2D>();
-        }
-        rb.bodyType = RigidbodyType2D.Dynamic;
+            // Initialize health
+            currentHP = maxHP;
 
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
+            rb = GetComponent<Rigidbody2D>();
+            if (rb == null)
+            {
+                rb = gameObject.AddComponent<Rigidbody2D>();
+            }
+            rb.bodyType = RigidbodyType2D.Dynamic;
+
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                originalColor = spriteRenderer.color;
+            }
+        }
+
+        void Update()
         {
-            originalColor = spriteRenderer.color;
+            // Placeholder for any update logic, if needed
         }
-    }
-
-    void Update()
-    {
-        // Placeholder for any update logic, if needed
     }
 }

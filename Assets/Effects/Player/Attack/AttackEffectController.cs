@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using CrossCode2D.Enemies;
 
 public class AttackEffectController : MonoBehaviour
 {
@@ -7,7 +8,7 @@ public class AttackEffectController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Collider2D attackCollider;
     public float attackDamage = 10f; // Damage dealt by the attack
-   
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -77,12 +78,12 @@ public class AttackEffectController : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            JungleShockcatController enemy = collision.GetComponent<JungleShockcatController>();
+            IEnemy enemy = collision.GetComponent<IEnemy>();
             if (enemy != null)
             {
                 Vector2 attackDirection = (collision.transform.position - transform.position).normalized;
-                enemy.TakeDamage(attackDamage, attackDirection);
-                Debug.Log($"Player attacked {enemy.name} and dealt {attackDamage} damage.");
+                enemy.TakeDamage(attackDamage);
+                Debug.Log($"Player attacked {collision.name} and dealt {attackDamage} damage.");
             }
         }
     }
