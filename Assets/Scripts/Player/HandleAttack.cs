@@ -14,6 +14,7 @@ namespace CrossCode2D.Player
         // References to other scripts
         private HandleMovement playerMovement;
         private AttackEffectController attackEffectController;
+        private ChargeEffectController chargeEffectController;
         private Player player;
 
         // Attack Variables
@@ -23,14 +24,24 @@ namespace CrossCode2D.Player
         public enum Element { Neutral, Heat, Cold, Shock, Wave }
         public Element currentElement = Element.Neutral;
 
+        // Melee-related variables
         private float lastAttackTime;
         private int attackCounter;
         private bool isCooldown;
         private float attackSpeed;
 
+        // Throw-related variables
+        private bool isCharging = false;
+        private float chargeTime = 2f; // Time required to charge the throw
+        private bool isThrowCooldown = false;
+        private bool throwCycle = false; // To alternate between Throw_1 and Throw_2
+
         // Slide-related variables
         public float slideForce = 10f;
         public float slideDuration = 0.2f;
+
+        // Projectile-related variables
+        public GameObject projectilePrefab; // Assign the projectile prefab in the Inspector
 
         void Start()
         {
@@ -39,6 +50,7 @@ namespace CrossCode2D.Player
             spriteRenderer = GetComponent<SpriteRenderer>();
             playerMovement = GetComponent<HandleMovement>();
             attackEffectController = GetComponentInChildren<AttackEffectController>();
+            chargeEffectController = GetComponentInChildren<ChargeEffectController>();
             player = GetComponent<Player>();
         }
 
@@ -60,7 +72,7 @@ namespace CrossCode2D.Player
                     // Get the attack speed based on the current element
                     attackSpeed = GetAttackSpeed(currentElement);
 
-                    // Reset the attack counter if the time between attacks is greater than 0.6 seconds
+                    // Reset the attack counter if the time between attacks is greater than 0.6f
                     if (timeSinceLastAttack > 0.6f)
                     {
                         attackCounter = 0;
@@ -102,6 +114,29 @@ namespace CrossCode2D.Player
                     }
                 }
             }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.K) && !isThrowCooldown)
+                {
+                    StartCoroutine(HandlePreAim());
+                }
+
+                if (Input.GetKeyUp(KeyCode.K))
+                {
+                    animator.SetBool("Aim", false);
+                    chargeEffectController.StopCharge();
+                    if (isCharging)
+                    {
+                        isCharging = false;
+                        StopCoroutine(ChargeThrow());
+                        PerformChargedThrow();
+                    }
+                    else
+                    {
+                        PerformNormalThrow();
+                    }
+                }
+            }
         }
 
         void ChangeAttackStyle()
@@ -115,13 +150,13 @@ namespace CrossCode2D.Player
         void ChangeElement()
         {
             Dictionary<KeyCode, Element> elementKeyMap = new Dictionary<KeyCode, Element>
-        {
-            { KeyCode.BackQuote, Element.Neutral }, // `~` key
-            { KeyCode.Alpha1, Element.Heat },       // `1` key
-            { KeyCode.Alpha2, Element.Cold },       // `2` key
-            { KeyCode.Alpha3, Element.Shock },      // `3` key
-            { KeyCode.Alpha4, Element.Wave }        // `4` key
-        };
+            {
+                { KeyCode.BackQuote, Element.Neutral }, // `~` key
+                { KeyCode.Alpha1, Element.Heat },       // `1` key
+                { KeyCode.Alpha2, Element.Cold },       // `2` key
+                { KeyCode.Alpha3, Element.Shock },      // `3` key
+                { KeyCode.Alpha4, Element.Wave }        // `4` key
+            };
 
             foreach (var entry in elementKeyMap)
             {
@@ -173,6 +208,77 @@ namespace CrossCode2D.Player
 
             // Stop the slide by setting the velocity to zero
             rb.linearVelocity = Vector2.zero;
+        }
+
+        private IEnumerator HandlePreAim()
+        {
+            animator.SetBool("PreAim", true);
+            yield return new WaitForSeconds(3f / 60f);
+            animator.SetBool("PreAim", false);
+            animator.SetBool("Aim", true);
+            chargeEffectController.Charge(!spriteRenderer.flipX, currentElement.ToString());
+            isCharging = true;
+            StartCoroutine(ChargeThrow());
+        }
+
+        private IEnumerator ChargeThrow()
+        {
+            yield return new WaitForSeconds(chargeTime);
+            if (isCharging)
+            {
+                isCharging = false;
+            }
+        }
+
+        private void PerformNormalThrow()
+        {
+            // Alternate between Throw_1 and Throw_2
+            if (throwCycle)
+            {
+                animator.SetTrigger("Throw_1");
+            }
+            else
+            {
+                animator.SetTrigger("Throw_2");
+            }
+            throwCycle = !throwCycle;
+
+            // Implement the logic for a normal throw
+            Debug.Log("Performing normal throw");
+            LaunchProjectile();
+            StartCoroutine(ThrowCooldown());
+        }
+
+        private void PerformChargedThrow()
+        {
+            // Implement the logic for a charged throw
+            Debug.Log("Performing charged throw");
+            animator.SetTrigger("ChargedThrow");
+            LaunchProjectile();
+            // Add your charged throw logic here
+        }
+
+        private void LaunchProjectile()
+        {
+            // Instantiate the projectile prefab
+            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+
+            // Get the direction to launch the projectile
+            Vector2 launchDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+
+            // Launch the projectile
+            Projectile projectileScript = projectile.GetComponent<Projectile>();
+            if (projectileScript != null)
+            {
+                projectileScript.Launch(launchDirection);
+            }
+        }
+
+        private IEnumerator ThrowCooldown()
+        {
+            isThrowCooldown = true;
+            yield return new WaitForSeconds(0.5f); // Adjust the cooldown duration as needed
+            isThrowCooldown = false;
         }
 
         public void TakeDamage(float damage)

@@ -10,24 +10,23 @@ namespace CrossCode2D.UI
         public Image ThrowStyleActive;
         public Image MeleeStyle;
         public Image ThrowStyle;
-        
-        private HandleAttack playerStyle;
+
+        private CrossCode2D.Player.HandleAttack player; 
 
         void Start()
         {
             // Find the player object and get the HandleAttack component
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                playerStyle = player.GetComponent<HandleAttack>();
-            }
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<CrossCode2D.Player.HandleAttack>();
+        }
 
+        void Update()
+        {
             UpdatePlayerStyle();
         }
 
         public void UpdatePlayerStyle()
         {
-            switch (playerStyle.currentStyle)
+            switch (player.currentStyle)
             {
                 case HandleAttack.CombatStyle.Melee:
                     MeleeStyleActive.enabled = true;

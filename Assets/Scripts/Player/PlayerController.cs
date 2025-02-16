@@ -28,9 +28,5 @@ namespace CrossCode2D.Player
         void Update()
         {
         }
-
-        void FixedUpdate()
-        {
-        }
     }
 }

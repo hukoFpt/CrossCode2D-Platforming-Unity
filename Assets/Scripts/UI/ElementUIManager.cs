@@ -11,21 +11,20 @@ namespace CrossCode2D.UI
         public Sprite coldIcon;
         public Sprite shockIcon;
         public Sprite waveIcon;
-
-        private HandleAttack playerElement;
-    void Start()
+        private CrossCode2D.Player.HandleAttack player;
+        void Start()
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            if (player != null)
-            {
-                playerElement = player.GetComponent<HandleAttack>();
-            }
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<CrossCode2D.Player.HandleAttack>();
+        }
+
+        void Update()
+        {
             UpdateElementSprite();
         }
 
         public void UpdateElementSprite()
         {
-            switch (playerElement.currentElement)
+            switch (player.currentElement)
             {
                 case HandleAttack.Element.Neutral:
                     GetComponent<Image>().sprite = neutralIcon;
