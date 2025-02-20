@@ -31,10 +31,12 @@ namespace CrossCode2D.Player
         private float attackSpeed;
 
         // Throw-related variables
-        private bool isCharging = false;
+        private bool isCharged = false;
         private float chargeTime = 2f; // Time required to charge the throw
         private bool isThrowCooldown = false;
         private bool throwCycle = false; // To alternate between Throw_1 and Throw_2
+        private bool isThrowing = false;
+        private bool isKeyDown = false;
 
         // Slide-related variables
         public float slideForce = 10f;
@@ -59,6 +61,18 @@ namespace CrossCode2D.Player
             HandlePlayerAttack();
             ChangeAttackStyle();
             ChangeElement();
+
+            // Handle KeyUp logic in Update
+            if (isKeyDown && !Input.GetKey(KeyCode.K))
+            {
+                isKeyDown = false;
+                HandleKeyUp();
+            }
+
+            if (isThrowing)
+            {
+                chargeEffectController.UpdatePosition(!spriteRenderer.flipX);
+            }
         }
 
         public void HandlePlayerAttack()
@@ -118,24 +132,34 @@ namespace CrossCode2D.Player
             {
                 if (Input.GetKeyDown(KeyCode.K) && !isThrowCooldown)
                 {
-                    StartCoroutine(HandlePreAim());
+                    isThrowing = true;
+                    isKeyDown = true;
+                    StartCoroutine(HandleAim());
+                    StartCoroutine(ThrowCooldown());
                 }
+            }
+        }
 
-                if (Input.GetKeyUp(KeyCode.K))
+        private void HandleKeyUp()
+        {
+            if (isThrowing)
+            {
+                isThrowing = false;
+                animator.SetBool("Aim", false);
+                chargeEffectController.StopCharge();
+                StopCoroutine(ChargeThrow());
+                StopCoroutine(HandleAim());
+                if (isCharged)
                 {
-                    animator.SetBool("Aim", false);
-                    chargeEffectController.StopCharge();
-                    if (isCharging)
-                    {
-                        isCharging = false;
-                        StopCoroutine(ChargeThrow());
-                        PerformChargedThrow();
-                    }
-                    else
-                    {
-                        PerformNormalThrow();
-                    }
+                    PerformChargedThrow();
                 }
+                else
+                {
+                    PerformNormalThrow();
+                }
+                StartCoroutine(ThrowCooldown());
+                isCharged = false;
+                isThrowing = false;
             }
         }
 
@@ -210,29 +234,25 @@ namespace CrossCode2D.Player
             rb.linearVelocity = Vector2.zero;
         }
 
-        private IEnumerator HandlePreAim()
+        private IEnumerator HandleAim()
         {
+            isCharged = false;
             animator.SetBool("PreAim", true);
             yield return new WaitForSeconds(3f / 60f);
             animator.SetBool("PreAim", false);
             animator.SetBool("Aim", true);
             chargeEffectController.Charge(!spriteRenderer.flipX, currentElement.ToString());
-            isCharging = true;
             StartCoroutine(ChargeThrow());
         }
 
         private IEnumerator ChargeThrow()
         {
             yield return new WaitForSeconds(chargeTime);
-            if (isCharging)
-            {
-                isCharging = false;
-            }
+            isCharged = true;
         }
 
         private void PerformNormalThrow()
         {
-            // Alternate between Throw_1 and Throw_2
             if (throwCycle)
             {
                 animator.SetTrigger("Throw_1");
@@ -245,7 +265,7 @@ namespace CrossCode2D.Player
 
             // Implement the logic for a normal throw
             Debug.Log("Performing normal throw");
-            LaunchProjectile();
+            LaunchProjectile(currentElement.ToString(), false);
             StartCoroutine(ThrowCooldown());
         }
 
@@ -254,11 +274,11 @@ namespace CrossCode2D.Player
             // Implement the logic for a charged throw
             Debug.Log("Performing charged throw");
             animator.SetTrigger("ChargedThrow");
-            LaunchProjectile();
+            LaunchProjectile(currentElement.ToString(), true);
             // Add your charged throw logic here
         }
 
-        private void LaunchProjectile()
+        private void LaunchProjectile(string currentElement, bool isCharged)
         {
             // Instantiate the projectile prefab
             GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
@@ -270,7 +290,7 @@ namespace CrossCode2D.Player
             Projectile projectileScript = projectile.GetComponent<Projectile>();
             if (projectileScript != null)
             {
-                projectileScript.Launch(launchDirection);
+                projectileScript.Launch(launchDirection, currentElement, isCharged);
             }
         }
 
@@ -279,11 +299,6 @@ namespace CrossCode2D.Player
             isThrowCooldown = true;
             yield return new WaitForSeconds(0.5f); // Adjust the cooldown duration as needed
             isThrowCooldown = false;
-        }
-
-        public void TakeDamage(float damage)
-        {
-            player.TakeDamage(damage);
         }
     }
 }

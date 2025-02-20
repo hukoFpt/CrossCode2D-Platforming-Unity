@@ -18,16 +18,7 @@ namespace CrossCode2D.Player
         public void Charge(bool characterFacingRight, string element)
         {
             spriteRenderer.enabled = true;
-
-            if (characterFacingRight)
-            {
-                spriteRenderer.transform.localPosition = new Vector3(0.4f, 0.1f, -1f);
-            }
-            else
-            {
-                spriteRenderer.transform.localPosition = new Vector3(-0.4f, 0.1f, -1f);
-            }
-
+            UpdatePosition(characterFacingRight);
 
             switch (element)
             {
@@ -58,6 +49,18 @@ namespace CrossCode2D.Player
             animator.SetBool("Wave", false);
 
             spriteRenderer.enabled = false;
+        }
+
+        public void UpdatePosition(bool characterFacingRight)
+        {
+            if (characterFacingRight)
+            {
+                spriteRenderer.transform.localPosition = new Vector3(0.4f, 0.1f, -1f);
+            }
+            else
+            {
+                spriteRenderer.transform.localPosition = new Vector3(-0.4f, 0.1f, -1f);
+            }
         }
     }
 }

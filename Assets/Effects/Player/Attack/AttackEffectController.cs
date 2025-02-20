@@ -7,13 +7,14 @@ public class AttackEffectController : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Collider2D attackCollider;
-    public float attackDamage = 10f; // Damage dealt by the attack
+    private CrossCode2D.Player.Player player;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         attackCollider = GetComponent<Collider2D>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<CrossCode2D.Player.Player>();
         if (attackCollider == null)
         {
             attackCollider = gameObject.AddComponent<BoxCollider2D>();
@@ -82,8 +83,8 @@ public class AttackEffectController : MonoBehaviour
             if (enemy != null)
             {
                 Vector2 attackDirection = (collision.transform.position - transform.position).normalized;
-                enemy.TakeDamage(attackDamage);
-                Debug.Log($"Player attacked {collision.name} and dealt {attackDamage} damage.");
+                enemy.TakeDamage(player.stats.attack);
+                Debug.Log($"Player attacked {collision.name} and dealt {player.stats.attack} damage.");
             }
         }
     }

@@ -1,0 +1,784 @@
+fileFormatVersion: 2
+guid: b058933855406d54b8547fe694bda77c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5584698874961208541
+    second: tiny_0
+  - first:
+      213: 6499326155144154215
+    second: tiny_1
+  - first:
+      213: -2764147833749965909
+    second: tiny_2
+  - first:
+      213: -744523237566518596
+    second: tiny_3
+  - first:
+      213: -4878810647892305225
+    second: tiny_4
+  - first:
+      213: 1959250512080170283
+    second: tiny_5
+  - first:
+      213: -1811462303009816897
+    second: tiny_6
+  - first:
+      213: 6934117673680057621
+    second: tiny_7
+  - first:
+      213: 1403074321315256127
+    second: tiny_8
+  - first:
+      213: 4477654415068041461
+    second: tiny_9
+  - first:
+      213: 549575814041555206
+    second: tiny_10
+  - first:
+      213: 2160887583626472935
+    second: tiny_11
+  - first:
+      213: 4995804316832633721
+    second: tiny_12
+  - first:
+      213: 9109452889543148037
+    second: tiny_13
+  - first:
+      213: 7801136846776623468
+    second: tiny_14
+  - first:
+      213: -3295478868674605277
+    second: tiny_15
+  - first:
+      213: 6831318190736398781
+    second: tiny_16
+  - first:
+      213: 8070862927385136660
+    second: tiny_17
+  - first:
+      213: 1598782123809556641
+    second: tiny_18
+  - first:
+      213: 7112529831447698574
+    second: tiny_19
+  - first:
+      213: 6644885555198874199
+    second: tiny_20
+  - first:
+      213: 7390889963808453106
+    second: tiny_21
+  - first:
+      213: 6489218900488676019
+    second: tiny_22
+  - first:
+      213: 4405557906048129074
+    second: tiny_23
+  - first:
+      213: -2206999402542445956
+    second: tiny_24
+  - first:
+      213: 211174089784021218
+    second: tiny_25
+  - first:
+      213: -5823930240618667181
+    second: tiny_26
+  - first:
+      213: -1184025970758066211
+    second: tiny_27
+  - first:
+      213: 9169556379427603408
+    second: tiny_28
+  - first:
+      213: 7885504820545435186
+    second: tiny_29
+  - first:
+      213: -525266446205665473
+    second: tiny_30
+  - first:
+      213: 3830606403283876971
+    second: tiny_31
+  - first:
+      213: -2151583962988331098
+    second: tiny_32
+  - first:
+      213: 5983636715661339105
+    second: tiny_33
+  - first:
+      213: -6827698205729408698
+    second: tiny_34
+  - first:
+      213: 4546307371245716749
+    second: tiny_35
+  - first:
+      213: -7089772542912820162
+    second: tiny_36
+  - first:
+      213: -6463711983184377416
+    second: tiny_37
+  - first:
+      213: -7633636065696393297
+    second: tiny_38
+  - first:
+      213: 3677431283639106776
+    second: tiny_39
+  - first:
+      213: 2975960829810854954
+    second: tiny_40
+  - first:
+      213: 4845965293087741352
+    second: tiny_41
+  - first:
+      213: -4693663784630511368
+    second: tiny_42
+  - first:
+      213: -5435051972653071159
+    second: tiny_43
+  - first:
+      213: 2611620143058818776
+    second: tiny_44
+  - first:
+      213: 3818826537438311323
+    second: tiny_45
+  - first:
+      213: -6329702556879095929
+    second: tiny_46
+  - first:
+      213: -2305890081516552876
+    second: tiny_47
+  - first:
+      213: 6912100918172660409
+    second: tiny_48
+  - first:
+      213: -5948256072932565806
+    second: tiny_49
+  - first:
+      213: -9023421597599691063
+    second: tiny_50
+  - first:
+      213: 9076074875877272240
+    second: tiny_51
+  - first:
+      213: 7569877177326485462
+    second: tiny_52
+  - first:
+      213: 1317727725047168782
+    second: tiny_53
+  - first:
+      213: 5086644378708109478
+    second: tiny_54
+  - first:
+      213: 6998156667477200726
+    second: tiny_55
+  - first:
+      213: 7113359259476441994
+    second: tiny_56
+  - first:
+      213: 8320010776018604297
+    second: tiny_57
+  - first:
+      213: 2946524792804639826
+    second: tiny_58
+  - first:
+      213: 7906437194736800915
+    second: tiny_59
+  - first:
+      213: -1478952362119573348
+    second: tiny_60
+  - first:
+      213: 6941042082439741253
+    second: tiny_61
+  - first:
+      213: 7681201178508943319
+    second: tiny_62
+  - first:
+      213: 8802454267267749855
+    second: tiny_63
+  - first:
+      213: -8368460393971139727
+    second: tiny_64
+  - first:
+      213: -7959762768320744932
+    second: tiny_65
+  - first:
+      213: -3475046091492433072
+    second: tiny_66
+  - first:
+      213: -857501665155254042
+    second: tiny_67
+  - first:
+      213: 7701543566145644123
+    second: tiny_68
+  - first:
+      213: -2412446152146064349
+    second: tiny_69
+  - first:
+      213: -4232831372740724257
+    second: tiny_70
+  - first:
+      213: 8976010140375088072
+    second: tiny_71
+  - first:
+      213: 8097699766990345277
+    second: tiny_72
+  - first:
+      213: -5851875182015254168
+    second: tiny_73
+  - first:
+      213: -3197152467555325216
+    second: tiny_74
+  - first:
+      213: -3248592828237460793
+    second: tiny_75
+  - first:
+      213: -6713396422505192798
+    second: tiny_76
+  - first:
+      213: 1778958548313513841
+    second: tiny_77
+  - first:
+      213: 718170102610607644
+    second: tiny_78
+  - first:
+      213: -3287082975144406769
+    second: tiny_79
+  - first:
+      213: -8867792106052798633
+    second: tiny_80
+  - first:
+      213: 2943284712191102599
+    second: tiny_81
+  - first:
+      213: -7696970324165498147
+    second: tiny_82
+  - first:
+      213: -6753301257257654074
+    second: tiny_83
+  - first:
+      213: 4902731097863691777
+    second: tiny_84
+  - first:
+      213: 1445602682296041066
+    second: tiny_85
+  - first:
+      213: -1651525079641227202
+    second: tiny_86
+  - first:
+      213: -4431164699656100332
+    second: tiny_87
+  - first:
+      213: -728379944536996359
+    second: tiny_88
+  - first:
+      213: -2402427056403221709
+    second: tiny_89
+  - first:
+      213: -1196697066512674292
+    second: tiny_90
+  - first:
+      213: 4916414642317398096
+    second: tiny_91
+  - first:
+      213: -3872189300456492181
+    second: tiny_92
+  - first:
+      213: -1185101377785931827
+    second: tiny_93
+  - first:
+      213: 6878633358624391024
+    second: tiny_94
+  - first:
+      213: 3872721806085056442
+    second: tiny_95
+  - first:
+      213: -4947887230640509060
+    second: tiny_96
+  - first:
+      213: 8546516819548759515
+    second: tiny_97
+  - first:
+      213: -9007886667592710923
+    second: tiny_98
+  - first:
+      213: 4341657530390597575
+    second: tiny_99
+  - first:
+      213: -8287441594027268437
+    second: tiny_100
+  - first:
+      213: 572945133336113919
+    second: tiny_101
+  - first:
+      213: 8750987562290149050
+    second: tiny_102
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tiny_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 66
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4269ba906d08d40800000000000000
+      internalID: 5584698874961208541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 58
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cc5c404be323a50800000000000000
+      internalID: 6499326155144154215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3faa6b036c3a9d0800000000000000
+      internalID: -2764147833749965909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbae2d16f0ceaa5f0800000000000000
+      internalID: -744523237566518596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba5cf5909bfa4cb0800000000000000
+      internalID: -4878810647892305225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d6a8ec5f7a03b10800000000000000
+      internalID: 1959250512080170283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbeb61902a46cd6e0800000000000000
+      internalID: -1811462303009816897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5153572294fea3060800000000000000
+      internalID: 6934117673680057621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37d77359a8b87310800000000000000
+      internalID: 1403074321315256127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_9
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 66
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0171587f2d32e30800000000000000
+      internalID: 4477654415068041461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tiny_89
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3337c40225dd8aed0800000000000000
+      internalID: -2402427056403221709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8d287220862941943a85914349405b8c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tiny_0: 5584698874961208541
+      tiny_1: 6499326155144154215
+      tiny_10: 549575814041555206
+      tiny_100: -8287441594027268437
+      tiny_101: 572945133336113919
+      tiny_102: 8750987562290149050
+      tiny_11: 2160887583626472935
+      tiny_12: 4995804316832633721
+      tiny_13: 9109452889543148037
+      tiny_14: 7801136846776623468
+      tiny_15: -3295478868674605277
+      tiny_16: 6831318190736398781
+      tiny_17: 8070862927385136660
+      tiny_18: 1598782123809556641
+      tiny_19: 7112529831447698574
+      tiny_2: -2764147833749965909
+      tiny_20: 6644885555198874199
+      tiny_21: 7390889963808453106
+      tiny_22: 6489218900488676019
+      tiny_23: 4405557906048129074
+      tiny_24: -2206999402542445956
+      tiny_25: 211174089784021218
+      tiny_26: -5823930240618667181
+      tiny_27: -1184025970758066211
+      tiny_28: 9169556379427603408
+      tiny_29: 7885504820545435186
+      tiny_3: -744523237566518596
+      tiny_30: -525266446205665473
+      tiny_31: 3830606403283876971
+      tiny_32: -2151583962988331098
+      tiny_33: 5983636715661339105
+      tiny_34: -6827698205729408698
+      tiny_35: 4546307371245716749
+      tiny_36: -7089772542912820162
+      tiny_37: -6463711983184377416
+      tiny_38: -7633636065696393297
+      tiny_39: 3677431283639106776
+      tiny_4: -4878810647892305225
+      tiny_40: 2975960829810854954
+      tiny_41: 4845965293087741352
+      tiny_42: -4693663784630511368
+      tiny_43: -5435051972653071159
+      tiny_44: 2611620143058818776
+      tiny_45: 3818826537438311323
+      tiny_46: -6329702556879095929
+      tiny_47: -2305890081516552876
+      tiny_48: 6912100918172660409
+      tiny_49: -5948256072932565806
+      tiny_5: 1959250512080170283
+      tiny_50: -9023421597599691063
+      tiny_51: 9076074875877272240
+      tiny_52: 7569877177326485462
+      tiny_53: 1317727725047168782
+      tiny_54: 5086644378708109478
+      tiny_55: 6998156667477200726
+      tiny_56: 7113359259476441994
+      tiny_57: 8320010776018604297
+      tiny_58: 2946524792804639826
+      tiny_59: 7906437194736800915
+      tiny_6: -1811462303009816897
+      tiny_60: -1478952362119573348
+      tiny_61: 6941042082439741253
+      tiny_62: 7681201178508943319
+      tiny_63: 8802454267267749855
+      tiny_64: -8368460393971139727
+      tiny_65: -7959762768320744932
+      tiny_66: -3475046091492433072
+      tiny_67: -857501665155254042
+      tiny_68: 7701543566145644123
+      tiny_69: -2412446152146064349
+      tiny_7: 6934117673680057621
+      tiny_70: -4232831372740724257
+      tiny_71: 8976010140375088072
+      tiny_72: 8097699766990345277
+      tiny_73: -5851875182015254168
+      tiny_74: -3197152467555325216
+      tiny_75: -3248592828237460793
+      tiny_76: -6713396422505192798
+      tiny_77: 1778958548313513841
+      tiny_78: 718170102610607644
+      tiny_79: -3287082975144406769
+      tiny_8: 1403074321315256127
+      tiny_80: -8867792106052798633
+      tiny_81: 2943284712191102599
+      tiny_82: -7696970324165498147
+      tiny_83: -6753301257257654074
+      tiny_84: 4902731097863691777
+      tiny_85: 1445602682296041066
+      tiny_86: -1651525079641227202
+      tiny_87: -4431164699656100332
+      tiny_88: -728379944536996359
+      tiny_89: -2402427056403221709
+      tiny_9: 4477654415068041461
+      tiny_90: -1196697066512674292
+      tiny_91: 4916414642317398096
+      tiny_92: -3872189300456492181
+      tiny_93: -1185101377785931827
+      tiny_94: 6878633358624391024
+      tiny_95: 3872721806085056442
+      tiny_96: -4947887230640509060
+      tiny_97: 8546516819548759515
+      tiny_98: -9007886667592710923
+      tiny_99: 4341657530390597575
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,4930 @@
+fileFormatVersion: 2
+guid: ac9b60bef4742d347b37698a7084de78
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -275616137770102774
+    second: hall-fetica-small-red_0
+  - first:
+      213: 1499014630625413576
+    second: hall-fetica-small-red_1
+  - first:
+      213: -6566387123801762878
+    second: hall-fetica-small-red_2
+  - first:
+      213: -880209346124935313
+    second: hall-fetica-small-red_3
+  - first:
+      213: -3743589658855351895
+    second: hall-fetica-small-red_4
+  - first:
+      213: -8238084201609084017
+    second: hall-fetica-small-red_5
+  - first:
+      213: -5513870455412446245
+    second: hall-fetica-small-red_6
+  - first:
+      213: -9129177220185753042
+    second: hall-fetica-small-red_7
+  - first:
+      213: -137976289197334596
+    second: hall-fetica-small-red_8
+  - first:
+      213: -4749939702642605826
+    second: hall-fetica-small-red_9
+  - first:
+      213: -4666012539164105790
+    second: hall-fetica-small-red_10
+  - first:
+      213: -6157998443291236276
+    second: hall-fetica-small-red_11
+  - first:
+      213: -707193239370240003
+    second: hall-fetica-small-red_12
+  - first:
+      213: 3572181899380150271
+    second: hall-fetica-small-red_13
+  - first:
+      213: 4095753736558005266
+    second: hall-fetica-small-red_14
+  - first:
+      213: 5332357013102215302
+    second: hall-fetica-small-red_15
+  - first:
+      213: -4636452054181481995
+    second: hall-fetica-small-red_16
+  - first:
+      213: -5948970777562951094
+    second: hall-fetica-small-red_17
+  - first:
+      213: -7747100684084673796
+    second: hall-fetica-small-red_18
+  - first:
+      213: 6673628981252418565
+    second: hall-fetica-small-red_19
+  - first:
+      213: 7479803184802169043
+    second: hall-fetica-small-red_20
+  - first:
+      213: -7762943634106355523
+    second: hall-fetica-small-red_21
+  - first:
+      213: 6211515334045719272
+    second: hall-fetica-small-red_22
+  - first:
+      213: 5212137211132877248
+    second: hall-fetica-small-red_23
+  - first:
+      213: -7458484325871687539
+    second: hall-fetica-small-red_24
+  - first:
+      213: 9001567974320482844
+    second: hall-fetica-small-red_25
+  - first:
+      213: 5937596926197138235
+    second: hall-fetica-small-red_26
+  - first:
+      213: -2072708453857946263
+    second: hall-fetica-small-red_27
+  - first:
+      213: 7895095477779335694
+    second: hall-fetica-small-red_28
+  - first:
+      213: 4619594372294830365
+    second: hall-fetica-small-red_29
+  - first:
+      213: -3341392253661278735
+    second: hall-fetica-small-red_30
+  - first:
+      213: 1054343364490609986
+    second: hall-fetica-small-red_31
+  - first:
+      213: -3652994326217949480
+    second: hall-fetica-small-red_32
+  - first:
+      213: -5352882719690916020
+    second: hall-fetica-small-red_33
+  - first:
+      213: -7172451095098946092
+    second: hall-fetica-small-red_34
+  - first:
+      213: 3455729800861503835
+    second: hall-fetica-small-red_35
+  - first:
+      213: 6912588527947044432
+    second: hall-fetica-small-red_36
+  - first:
+      213: -8078103014013562723
+    second: hall-fetica-small-red_37
+  - first:
+      213: -3262092280460208197
+    second: hall-fetica-small-red_38
+  - first:
+      213: -8860761466938168177
+    second: hall-fetica-small-red_39
+  - first:
+      213: -3000619453651317320
+    second: hall-fetica-small-red_40
+  - first:
+      213: 8316160196019455717
+    second: hall-fetica-small-red_41
+  - first:
+      213: -8292824900058083677
+    second: hall-fetica-small-red_42
+  - first:
+      213: 316679468111455619
+    second: hall-fetica-small-red_43
+  - first:
+      213: 4193770523904066376
+    second: hall-fetica-small-red_44
+  - first:
+      213: -1217824246338206567
+    second: hall-fetica-small-red_45
+  - first:
+      213: -4643547178931013267
+    second: hall-fetica-small-red_46
+  - first:
+      213: 7238134828770321838
+    second: hall-fetica-small-red_47
+  - first:
+      213: -552005010657600106
+    second: hall-fetica-small-red_48
+  - first:
+      213: 7651358905365770392
+    second: hall-fetica-small-red_49
+  - first:
+      213: 441245788567663191
+    second: hall-fetica-small-red_50
+  - first:
+      213: 3342990108043712079
+    second: hall-fetica-small-red_51
+  - first:
+      213: 7017090574406851378
+    second: hall-fetica-small-red_52
+  - first:
+      213: -4200612446449719012
+    second: hall-fetica-small-red_53
+  - first:
+      213: 190446263464778749
+    second: hall-fetica-small-red_54
+  - first:
+      213: -6226174000207831348
+    second: hall-fetica-small-red_55
+  - first:
+      213: -247541266723382413
+    second: hall-fetica-small-red_56
+  - first:
+      213: -1401574707717855794
+    second: hall-fetica-small-red_57
+  - first:
+      213: 5528118401711974790
+    second: hall-fetica-small-red_58
+  - first:
+      213: -5539988397121149707
+    second: hall-fetica-small-red_59
+  - first:
+      213: 4108849508606696310
+    second: hall-fetica-small-red_60
+  - first:
+      213: -3047515476919544609
+    second: hall-fetica-small-red_61
+  - first:
+      213: 8322597198131857567
+    second: hall-fetica-small-red_62
+  - first:
+      213: -2233907207000280176
+    second: hall-fetica-small-red_63
+  - first:
+      213: -6397971469182583728
+    second: hall-fetica-small-red_64
+  - first:
+      213: -5643239580429489065
+    second: hall-fetica-small-red_65
+  - first:
+      213: -7862294253099427538
+    second: hall-fetica-small-red_66
+  - first:
+      213: 7518662720876102463
+    second: hall-fetica-small-red_67
+  - first:
+      213: -5639082870410598185
+    second: hall-fetica-small-red_68
+  - first:
+      213: -311433952665510958
+    second: hall-fetica-small-red_69
+  - first:
+      213: -5698282493586829065
+    second: hall-fetica-small-red_70
+  - first:
+      213: 8459316188250520411
+    second: hall-fetica-small-red_71
+  - first:
+      213: 6215905808264347907
+    second: hall-fetica-small-red_72
+  - first:
+      213: -3706975748621044321
+    second: hall-fetica-small-red_73
+  - first:
+      213: -6924979293258815019
+    second: hall-fetica-small-red_74
+  - first:
+      213: 8768327466358606497
+    second: hall-fetica-small-red_75
+  - first:
+      213: -1308727261732445051
+    second: hall-fetica-small-red_76
+  - first:
+      213: -6626184592323767428
+    second: hall-fetica-small-red_77
+  - first:
+      213: 5788971812664436573
+    second: hall-fetica-small-red_78
+  - first:
+      213: 4551492506185743345
+    second: hall-fetica-small-red_79
+  - first:
+      213: 7632194348987211549
+    second: hall-fetica-small-red_80
+  - first:
+      213: -7252130157612532210
+    second: hall-fetica-small-red_81
+  - first:
+      213: -3761531736316160039
+    second: hall-fetica-small-red_82
+  - first:
+      213: -7201041055436527059
+    second: hall-fetica-small-red_83
+  - first:
+      213: 2159500078524965111
+    second: hall-fetica-small-red_84
+  - first:
+      213: 2198675262897542641
+    second: hall-fetica-small-red_85
+  - first:
+      213: 3007858755876648868
+    second: hall-fetica-small-red_86
+  - first:
+      213: 3658317428752116616
+    second: hall-fetica-small-red_87
+  - first:
+      213: -6828849501087857843
+    second: hall-fetica-small-red_88
+  - first:
+      213: 5421114284891175484
+    second: hall-fetica-small-red_89
+  - first:
+      213: -8855029617707319145
+    second: hall-fetica-small-red_90
+  - first:
+      213: 5604318933231819610
+    second: hall-fetica-small-red_91
+  - first:
+      213: 5411439521984796815
+    second: hall-fetica-small-red_92
+  - first:
+      213: -9063468110007307945
+    second: hall-fetica-small-red_93
+  - first:
+      213: 5733777407115672711
+    second: hall-fetica-small-red_94
+  - first:
+      213: 5813907100994696904
+    second: hall-fetica-small-red_95
+  - first:
+      213: 1254876315162936371
+    second: hall-fetica-small-red_96
+  - first:
+      213: 3865233760764707415
+    second: hall-fetica-small-red_97
+  - first:
+      213: -711610084009770321
+    second: hall-fetica-small-red_98
+  - first:
+      213: -4358949645500970420
+    second: hall-fetica-small-red_99
+  - first:
+      213: -1795090938953140575
+    second: hall-fetica-small-red_100
+  - first:
+      213: -1777855468049729549
+    second: hall-fetica-small-red_101
+  - first:
+      213: 1727131738574523624
+    second: hall-fetica-small-red_102
+  - first:
+      213: 1795352496678292972
+    second: hall-fetica-small-red_103
+  - first:
+      213: -8193329871852848203
+    second: hall-fetica-small-red_104
+  - first:
+      213: 1697380862863448492
+    second: hall-fetica-small-red_105
+  - first:
+      213: -5181956315697398925
+    second: hall-fetica-small-red_106
+  - first:
+      213: -6047201543563113062
+    second: hall-fetica-small-red_107
+  - first:
+      213: -5790424119840328528
+    second: hall-fetica-small-red_108
+  - first:
+      213: 2776254393665430963
+    second: hall-fetica-small-red_109
+  - first:
+      213: 7600258590054477639
+    second: hall-fetica-small-red_110
+  - first:
+      213: -5363593680983102346
+    second: hall-fetica-small-red_111
+  - first:
+      213: 1599962783591959570
+    second: hall-fetica-small-red_112
+  - first:
+      213: -2086684840164224086
+    second: hall-fetica-small-red_113
+  - first:
+      213: 9198155252716331009
+    second: hall-fetica-small-red_114
+  - first:
+      213: 3633906301390994475
+    second: hall-fetica-small-red_115
+  - first:
+      213: -8780463302489171821
+    second: hall-fetica-small-red_116
+  - first:
+      213: 2936753626506166115
+    second: hall-fetica-small-red_117
+  - first:
+      213: 7015883524299522217
+    second: hall-fetica-small-red_118
+  - first:
+      213: 6870353161574217650
+    second: hall-fetica-small-red_119
+  - first:
+      213: -5291436894066555011
+    second: hall-fetica-small-red_120
+  - first:
+      213: 8745597165119530455
+    second: hall-fetica-small-red_121
+  - first:
+      213: -4734057656418551745
+    second: hall-fetica-small-red_122
+  - first:
+      213: -801151051203885369
+    second: hall-fetica-small-red_123
+  - first:
+      213: 6212654693794394697
+    second: hall-fetica-small-red_124
+  - first:
+      213: 3438312301329400122
+    second: hall-fetica-small-red_125
+  - first:
+      213: -8153266003003634273
+    second: hall-fetica-small-red_126
+  - first:
+      213: -8690057511293810596
+    second: hall-fetica-small-red_127
+  - first:
+      213: 9110643018951835405
+    second: hall-fetica-small-red_128
+  - first:
+      213: -8671230247877992628
+    second: hall-fetica-small-red_129
+  - first:
+      213: 6928681665927876502
+    second: hall-fetica-small-red_130
+  - first:
+      213: 5246827894350425974
+    second: hall-fetica-small-red_131
+  - first:
+      213: 7143069781838842765
+    second: hall-fetica-small-red_132
+  - first:
+      213: -3652601762705663206
+    second: hall-fetica-small-red_133
+  - first:
+      213: -6134763227900626816
+    second: hall-fetica-small-red_134
+  - first:
+      213: 5338041062900148271
+    second: hall-fetica-small-red_135
+  - first:
+      213: 7632194845426844194
+    second: hall-fetica-small-red_136
+  - first:
+      213: -649203886122326409
+    second: hall-fetica-small-red_137
+  - first:
+      213: 4593348002881417636
+    second: hall-fetica-small-red_138
+  - first:
+      213: -1437990262054881853
+    second: hall-fetica-small-red_139
+  - first:
+      213: 19620246358263675
+    second: hall-fetica-small-red_140
+  - first:
+      213: 2261563596262055712
+    second: hall-fetica-small-red_141
+  - first:
+      213: -4496299007420219264
+    second: hall-fetica-small-red_142
+  - first:
+      213: -5058977483972722270
+    second: hall-fetica-small-red_143
+  - first:
+      213: -2970774319834011913
+    second: hall-fetica-small-red_144
+  - first:
+      213: -2839985037243527180
+    second: hall-fetica-small-red_145
+  - first:
+      213: 4766168068206723444
+    second: hall-fetica-small-red_146
+  - first:
+      213: -7108640744457556260
+    second: hall-fetica-small-red_147
+  - first:
+      213: 22634645735303232
+    second: hall-fetica-small-red_148
+  - first:
+      213: 1855278336864983417
+    second: hall-fetica-small-red_149
+  - first:
+      213: 3537621282923645222
+    second: hall-fetica-small-red_150
+  - first:
+      213: 1592806288246237471
+    second: hall-fetica-small-red_151
+  - first:
+      213: 6441942548565604620
+    second: hall-fetica-small-red_152
+  - first:
+      213: 7629007210547326994
+    second: hall-fetica-small-red_153
+  - first:
+      213: 331874082550434635
+    second: hall-fetica-small-red_154
+  - first:
+      213: 1457514130408139274
+    second: hall-fetica-small-red_155
+  - first:
+      213: 671010790857884156
+    second: hall-fetica-small-red_156
+  - first:
+      213: -8957931109108810187
+    second: hall-fetica-small-red_157
+  - first:
+      213: 183998852418816131
+    second: hall-fetica-small-red_158
+  - first:
+      213: -8095406123198315947
+    second: hall-fetica-small-red_159
+  - first:
+      213: 2326457737470086623
+    second: hall-fetica-small-red_160
+  - first:
+      213: 6080474830055521480
+    second: hall-fetica-small-red_161
+  - first:
+      213: -5255603173141363400
+    second: hall-fetica-small-red_162
+  - first:
+      213: 4190476263924450353
+    second: hall-fetica-small-red_163
+  - first:
+      213: 4269060947861940178
+    second: hall-fetica-small-red_164
+  - first:
+      213: -2213876276911267291
+    second: hall-fetica-small-red_165
+  - first:
+      213: 2786806773868463215
+    second: hall-fetica-small-red_166
+  - first:
+      213: -5419237607153994691
+    second: hall-fetica-small-red_167
+  - first:
+      213: 3339930981488994245
+    second: hall-fetica-small-red_168
+  - first:
+      213: -2743753859102447997
+    second: hall-fetica-small-red_169
+  - first:
+      213: 2595834084000597495
+    second: hall-fetica-small-red_170
+  - first:
+      213: 6194110945217273397
+    second: hall-fetica-small-red_171
+  - first:
+      213: -2590781338999778761
+    second: hall-fetica-small-red_172
+  - first:
+      213: -7942329939498062945
+    second: hall-fetica-small-red_173
+  - first:
+      213: 7165391094434657048
+    second: hall-fetica-small-red_174
+  - first:
+      213: -4042001064567407282
+    second: hall-fetica-small-red_175
+  - first:
+      213: -2658485029600051510
+    second: hall-fetica-small-red_176
+  - first:
+      213: 5844228749174647065
+    second: hall-fetica-small-red_177
+  - first:
+      213: -2726299670947645806
+    second: hall-fetica-small-red_178
+  - first:
+      213: 5168777427819151881
+    second: hall-fetica-small-red_179
+  - first:
+      213: -5295934866868045749
+    second: hall-fetica-small-red_180
+  - first:
+      213: 1367923751565474303
+    second: hall-fetica-small-red_181
+  - first:
+      213: -4004567511409608987
+    second: hall-fetica-small-red_182
+  - first:
+      213: -2665571864581134388
+    second: hall-fetica-small-red_183
+  - first:
+      213: 9124425734045647979
+    second: hall-fetica-small-red_184
+  - first:
+      213: -9203922973631486885
+    second: hall-fetica-small-red_185
+  - first:
+      213: -2830223190115144822
+    second: hall-fetica-small-red_186
+  - first:
+      213: -6185403264533644345
+    second: hall-fetica-small-red_187
+  - first:
+      213: -7805834854833912919
+    second: hall-fetica-small-red_188
+  - first:
+      213: 4721299431058703046
+    second: hall-fetica-small-red_189
+  - first:
+      213: 3170852416133909038
+    second: hall-fetica-small-red_190
+  - first:
+      213: -2725327209469510212
+    second: hall-fetica-small-red_191
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hall-fetica-small-red_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 28
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0019dd3590dc2cf0800000000000000
+      internalID: -275616137770102774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 129
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c98a8b4dd19dc410800000000000000
+      internalID: 1499014630625413576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_2
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 126
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3d81c73b18fd4a0800000000000000
+      internalID: -6566387123801762878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_3
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 126
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f8e34634ed8c3f0800000000000000
+      internalID: -880209346124935313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 126
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9d9172a091c0cc0800000000000000
+      internalID: -3743589658855351895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_5
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 126
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83455dd0127cad80800000000000000
+      internalID: -8238084201609084017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_6
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 126
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbae97d80cca73b0800000000000000
+      internalID: -5513870455412446245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 126
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a7d3bcfa5ae4180800000000000000
+      internalID: -9129177220185753042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf57f6cb4fc51ef0800000000000000
+      internalID: -137976289197334596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_9
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef08677b103d41eb0800000000000000
+      internalID: -4749939702642605826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_10
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c3ea95315efe3fb0800000000000000
+      internalID: -4666012539164105790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48a734da056a8aa0800000000000000
+      internalID: -6157998443291236276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_12
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff67c3ee7b8f26f0800000000000000
+      internalID: -707193239370240003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_13
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff42a1e280f29130800000000000000
+      internalID: 3572181899380150271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_14
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 126
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cc40bb25a07d830800000000000000
+      internalID: 4095753736558005266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_15
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 126
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680458d8376500a40800000000000000
+      internalID: 5332357013102215302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_16
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 126
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f1f164fb6308afb0800000000000000
+      internalID: -4636452054181481995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 116
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a425e28c892017da0800000000000000
+      internalID: -5948970777562951094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 112
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf282f549f4cc7490800000000000000
+      internalID: -7747100684084673796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_19
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c6d46333e7d9c50800000000000000
+      internalID: 6673628981252418565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_20
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 112
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d008fbed599dc760800000000000000
+      internalID: 7479803184802169043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_21
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0f5b505eb744490800000000000000
+      internalID: -7762943634106355523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_22
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eadfaa494cb33650800000000000000
+      internalID: 6211515334045719272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_23
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c99b2ead2b355840800000000000000
+      internalID: 5212137211132877248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_24
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d886999b5042e7890800000000000000
+      internalID: -7458484325871687539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_25
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aa7ea516efbec70800000000000000
+      internalID: 9001567974320482844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_26
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 98
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b338e6512f4966250800000000000000
+      internalID: 5937596926197138235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_27
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96519d494a24c33e0800000000000000
+      internalID: -2072708453857946263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 112
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a84dcc183019d60800000000000000
+      internalID: 7895095477779335694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_29
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 112
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19e60f1b981c1040800000000000000
+      internalID: 4619594372294830365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_30
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd0741e27df0a1d0800000000000000
+      internalID: -3341392253661278735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_31
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 112
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245c0cf24b7c1ae00800000000000000
+      internalID: 1054343364490609986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_32
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 112
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8def243c305fd4dc0800000000000000
+      internalID: -3652994326217949480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_33
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4ffe78f68db6b5b0800000000000000
+      internalID: -5352882719690916020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dd04c3fab5567c90800000000000000
+      internalID: -7172451095098946092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_35
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b51d414d1f735ff20800000000000000
+      internalID: 3455729800861503835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_36
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 112
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05659b644a27eef50800000000000000
+      internalID: 6912588527947044432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_37
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 115
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9095bebb10d4ef80800000000000000
+      internalID: -8078103014013562723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_38
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 112
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb710aeaa58bab2d0800000000000000
+      internalID: -3262092280460208197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c6ea36460480580800000000000000
+      internalID: -8860761466938168177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_40
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 98
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd8cfe3188ab56d0800000000000000
+      internalID: -3000619453651317320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_41
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 98
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e68bfa23afe86370800000000000000
+      internalID: 8316160196019455717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 98
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae068fc0b7f9ec80800000000000000
+      internalID: -8292824900058083677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_43
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 98
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38561746c42156400800000000000000
+      internalID: 316679468111455619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_44
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 98
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8434eca6214433a30800000000000000
+      internalID: 4193770523904066376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_45
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 98
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994472edc4b691fe0800000000000000
+      internalID: -1217824246338206567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 98
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69bc0e717ece8fb0800000000000000
+      internalID: -4643547178931013267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_47
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 84
+        width: 22
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea5ec390745037460800000000000000
+      internalID: 7238134828770321838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_48
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 101
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d94811e52e658f0800000000000000
+      internalID: -552005010657600106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_49
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 101
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8903953c2661f2a60800000000000000
+      internalID: 7651358905365770392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_50
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 84
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7527636f4be9f1600800000000000000
+      internalID: 441245788567663191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_51
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 98
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4617959acfa46e20800000000000000
+      internalID: 3342990108043712079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_52
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 98
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b134403b6b16160800000000000000
+      internalID: 7017090574406851378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_53
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 98
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19a74a5c3d64b5c0800000000000000
+      internalID: -4200612446449719012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_54
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 98
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfb5e9a1ed994a200800000000000000
+      internalID: 190446263464778749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_55
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 98
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cced6d70cbf2899a0800000000000000
+      internalID: -6226174000207831348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_56
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 98
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bd3b9878e809cf0800000000000000
+      internalID: -247541266723382413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_57
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 98
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec52e4caa3b9c8ce0800000000000000
+      internalID: -1401574707717855794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_58
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 98
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 689a75aa562d7bc40800000000000000
+      internalID: 5528118401711974790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f4eec9a7e10e13b0800000000000000
+      internalID: -5539988397121149707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_60
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b5a04cbd0950930800000000000000
+      internalID: 4108849508606696310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_61
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd494b6f1dc05b5d0800000000000000
+      internalID: -3047515476919544609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_62
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 84
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f988f438e0ecf7370800000000000000
+      internalID: 8322597198131857567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_63
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 87
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09330912b319ff0e0800000000000000
+      internalID: -2233907207000280176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_64
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cb940c8d6d537a0800000000000000
+      internalID: -6397971469182583728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_65
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 84
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c6312308f2fa1b0800000000000000
+      internalID: -5643239580429489065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_66
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e29d964780583e290800000000000000
+      internalID: -7862294253099427538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_67
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 84
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33cac7b8e7a75860800000000000000
+      internalID: 7518662720876102463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_68
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 84
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8af2aa104fdb1b0800000000000000
+      internalID: -5639082870410598185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_69
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 84
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db506858709dabf0800000000000000
+      internalID: -311433952665510958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_70
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f01eeb4342abe0b0800000000000000
+      internalID: -5698282493586829065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_71
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b326bf047856570800000000000000
+      internalID: 8459316188250520411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_72
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 88
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30142ea3665534650800000000000000
+      internalID: 6215905808264347907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_73
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f957470723d2e8cc0800000000000000
+      internalID: -3706975748621044321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_74
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d96f5cd50885ef90800000000000000
+      internalID: -6924979293258815019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_75
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa0b92cf5b5fa970800000000000000
+      internalID: 8768327466358606497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_76
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58461984d7776dde0800000000000000
+      internalID: -1308727261732445051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_77
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73106668301b04a0800000000000000
+      internalID: -6626184592323767428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_78
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57ec9c313f865050800000000000000
+      internalID: 5788971812664436573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_79
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbbd0dc1562a2f30800000000000000
+      internalID: 4551492506185743345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_80
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 84
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f5024c2500be960800000000000000
+      internalID: 7632194348987211549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e7b9a8b024b5b90800000000000000
+      internalID: -7252130157612532210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d75485b0da5ccbc0800000000000000
+      internalID: -3761531736316160039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2aa3b51053c01c90800000000000000
+      internalID: -7201041055436527059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0a8e041e518fd10800000000000000
+      internalID: 2159500078524965111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f55275a083438e10800000000000000
+      internalID: 2198675262897542641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_86
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 46
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a773962a9f0eb920800000000000000
+      internalID: 3007858755876648868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_87
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88be360a154f4c230800000000000000
+      internalID: 3658317428752116616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_88
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d430e0f3f8d0b31a0800000000000000
+      internalID: -6828849501087857843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_89
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3afbb548baab3b40800000000000000
+      internalID: 5421114284891175484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_90
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7900ef88a7d9c1580800000000000000
+      internalID: -8855029617707319145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_91
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5b5747706a86cd40800000000000000
+      internalID: 5604318933231819610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_92
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88d96ff29b491b40800000000000000
+      internalID: 5411439521984796815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_93
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751fee536c7183280800000000000000
+      internalID: -9063468110007307945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_94
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 45
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c3a444c28729f40800000000000000
+      internalID: 5733777407115672711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_95
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 28
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6f8e774b52fa050800000000000000
+      internalID: 5813907100994696904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_96
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334865a2c573a6110800000000000000
+      internalID: 1254876315162936371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_97
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 56
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7524a3460a114a530800000000000000
+      internalID: 3865233760764707415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_98
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2030c166adf16f0800000000000000
+      internalID: -711610084009770321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 45
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a89126466e183c0800000000000000
+      internalID: -4358949645500970420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_100
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6fc244d4e8617e0800000000000000
+      internalID: -1795090938953140575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_101
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 60
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7f8ec0fd9c357e0800000000000000
+      internalID: -1777855468049729549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_102
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec890e5a2108f710800000000000000
+      internalID: 1727131738574523624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_103
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 56
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedce13659f5ae810800000000000000
+      internalID: 1795352496678292972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_104
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 44
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb3d9444e17b4e80800000000000000
+      internalID: -8193329871852848203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_105
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca99583d6ee4e8710800000000000000
+      internalID: 1697380862863448492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_106
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 59
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bb341af2ef518b0800000000000000
+      internalID: -5181956315697398925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_107
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 42
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d0abe4c36041ca0800000000000000
+      internalID: -6047201543563113062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_108
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4301621f744afa0800000000000000
+      internalID: -5790424119840328528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_109
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 58
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5ab8c69ac378620800000000000000
+      internalID: 2776254393665430963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_110
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 45
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74fee457bea897960800000000000000
+      internalID: 7600258590054477639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_111
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 31
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ce875f6ffa095b0800000000000000
+      internalID: -5363593680983102346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_112
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c08d9bca5343610800000000000000
+      internalID: 1599962783591959570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_113
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 28
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa391df813b9a03e0800000000000000
+      internalID: -2086684840164224086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_114
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 59
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100ec0be77966af70800000000000000
+      internalID: 9198155252716331009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_115
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 45
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2cb671278a3e6230800000000000000
+      internalID: 3633906301390994475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_116
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39897c3b527852680800000000000000
+      internalID: -8780463302489171821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_117
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 60
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f7dbc1dd171c820800000000000000
+      internalID: 2936753626506166115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_118
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 45
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a08363c4ec6d5160800000000000000
+      internalID: 7015883524299522217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_119
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7fc1dbcc5685f50800000000000000
+      internalID: 6870353161574217650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_120
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 28
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7744c91e2a0196b0800000000000000
+      internalID: -5291436894066555011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5ec97194a9e5970800000000000000
+      internalID: 8745597165119530455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_122
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3834f2c4af3d4eb0800000000000000
+      internalID: -4734057656418551745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_123
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 45
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6cf851d5db1e4f0800000000000000
+      internalID: -801151051203885369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_124
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 60
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94237c72788c73650800000000000000
+      internalID: 6212654693794394697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_125
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31489332d657bf20800000000000000
+      internalID: 3438312301329400122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_126
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 45
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d03b3a4c7c9de80800000000000000
+      internalID: -8153266003003634273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_127
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 59
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c580e914cb6b66780800000000000000
+      internalID: -8690057511293810596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_128
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f34043e818f6e70800000000000000
+      internalID: 9110643018951835405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_129
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 56
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f1c9d180a99a780800000000000000
+      internalID: -8671230247877992628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_130
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 42
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f8463f34f972060800000000000000
+      internalID: 6928681665927876502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_131
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 45
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f2e58cb2a70d840800000000000000
+      internalID: 5246827894350425974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_132
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bc458fe18412360800000000000000
+      internalID: 7143069781838842765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_133
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 61
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b96f39c0a5f4dc0800000000000000
+      internalID: -3652601762705663206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_134
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088badbf851fcdaa0800000000000000
+      internalID: -6134763227900626816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_135
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 28
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28ac968018841a40800000000000000
+      internalID: 5338041062900148271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_136
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2220c3a56c00be960800000000000000
+      internalID: 7632194845426844194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_137
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 59
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77620e451809df6f0800000000000000
+      internalID: -649203886122326409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_138
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 45
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a13f790ca9debf30800000000000000
+      internalID: 4593348002881417636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_139
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c57fb7b97b3b0ce0800000000000000
+      internalID: -1437990262054881853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_140
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 45
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7707969284b54000800000000000000
+      internalID: 19620246358263675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_141
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 62
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f9728cb10b26f10800000000000000
+      internalID: 2261563596262055712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_142
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080c6ca00efe991c0800000000000000
+      internalID: -4496299007420219264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_143
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 42
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a14b1d28c6eac9b0800000000000000
+      internalID: -5058977483972722270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_144
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 62
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f6e076fe70b5c6d0800000000000000
+      internalID: -2970774319834011913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_145
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffccafc7a85698d0800000000000000
+      internalID: -2839985037243527180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_146
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 56
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47185451b94d42240800000000000000
+      internalID: 4766168068206723444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_147
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 42
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde2db6f7e8095d90800000000000000
+      internalID: -7108640744457556260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_148
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0486ba2271a605000800000000000000
+      internalID: 22634645735303232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_149
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 45
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979905451d54fb910800000000000000
+      internalID: 1855278336864983417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_150
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 42
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629868e40d7281130800000000000000
+      internalID: 3537621282923645222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_151
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f19ecee41e8ca1610800000000000000
+      internalID: 1592806288246237471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_152
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 58
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c093ab6fd90666950800000000000000
+      internalID: 6441942548565604620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_153
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 42
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210319543adafd960800000000000000
+      internalID: 7629007210547326994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_154
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bc39048bd0b9400800000000000000
+      internalID: 331874082550434635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_155
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ae61e11612a3410800000000000000
+      internalID: 1457514130408139274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_156
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 32
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1c98552c8ef4900800000000000000
+      internalID: 671010790857884156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_157
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 28
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ef52f0e190fa380800000000000000
+      internalID: -8957931109108810187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_158
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388c08d3bf1bd8200800000000000000
+      internalID: 183998852418816131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_159
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 31
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5520e32b50757af80800000000000000
+      internalID: -8095406123198315947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_160
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd0dd27cfc394020800000000000000
+      internalID: 2326457737470086623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_161
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ccb92764af226450800000000000000
+      internalID: 6080474830055521480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_162
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 31
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8354e7862c85017b0800000000000000
+      internalID: -5255603173141363400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_163
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 31
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1344ceeb5ff872a30800000000000000
+      internalID: 4190476263924450353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_164
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7adc94050ce3b30800000000000000
+      internalID: 4269060947861940178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_165
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 28
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5222a0a714bb641e0800000000000000
+      internalID: -2213876276911267291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_166
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 28
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f640516eef9bca620800000000000000
+      internalID: 2786806773868463215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_167
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 28
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d34f520db100bc4b0800000000000000
+      internalID: -5419237607153994691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_168
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 28
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c729fd2881d95e20800000000000000
+      internalID: 3339930981488994245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_169
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3866715f66a3ce9d0800000000000000
+      internalID: -2743753859102447997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_170
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f505b89851460420800000000000000
+      internalID: 2595834084000597495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_171
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ed80d3617e5f550800000000000000
+      internalID: 6194110945217273397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_172
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73215364912bb0cd0800000000000000
+      internalID: -2590781338999778761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_173
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 14
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ba443100d27c190800000000000000
+      internalID: -7942329939498062945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_174
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 14
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813768c8c35907360800000000000000
+      internalID: 7165391094434657048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_175
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 14
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d75bc727de7e7c0800000000000000
+      internalID: -4042001064567407282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_176
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 14
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acebef963f92b1bd0800000000000000
+      internalID: -2658485029600051510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_177
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 14
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9192ea4551fda1150800000000000000
+      internalID: 5844228749174647065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_178
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296b6e1d4ec3a2ad0800000000000000
+      internalID: -2726299670947645806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_179
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902c73c6faf2bb740800000000000000
+      internalID: 5168777427819151881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_180
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4879b23c4f0186b0800000000000000
+      internalID: -5295934866868045749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_181
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff931eb8767dbf210800000000000000
+      internalID: 1367923751565474303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_182
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 14
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e63c53c01bec68c0800000000000000
+      internalID: -4004567511409608987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_183
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7ad50138cf10bd0800000000000000
+      internalID: -2665571864581134388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_184
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 18
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b644931acd870ae70800000000000000
+      internalID: 9124425734045647979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_185
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 14
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5463a8e1d8154080800000000000000
+      internalID: -9203922973631486885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_186
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b2d16f00709b8d0800000000000000
+      internalID: -2830223190115144822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_187
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cb3ee8a088092aa0800000000000000
+      internalID: -6185403264533644345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_188
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3034e7e8a1ca390800000000000000
+      internalID: -7805834854833912919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_189
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2028a61dc658140800000000000000
+      internalID: 4721299431058703046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_190
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 14
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ac9daf871210c20800000000000000
+      internalID: 3170852416133909038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hall-fetica-small-red_191
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 14
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbdfcd6a751bd2ad0800000000000000
+      internalID: -2725327209469510212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

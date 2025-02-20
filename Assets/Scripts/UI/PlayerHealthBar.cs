@@ -11,8 +11,11 @@ namespace CrossCode2D.UI
         public Image HPFill2;
         public Image HPFill3;
         public TMP_Text HPText;
+        public TMP_Text LevelText;
+        public TMP_Text AttackText;
+        public TMP_Text DefenseText;
 
-        private CrossCode2D.Player.Player player; // Fully qualified name to avoid ambiguity
+        private CrossCode2D.Player.Player player;
 
         private void Start()
         {
@@ -21,7 +24,8 @@ namespace CrossCode2D.UI
 
         private void Update()
         {
-            UpdateHealth(player.currentHP, player.maxHP);
+            UpdateHealth(player.stats.currentHP, player.stats.maxHP);
+            UpdateStats(player.stats.level, player.stats.attack, player.stats.defense);
         }
 
         public void UpdateHealth(float currentHealth, float maxHealth)
@@ -31,6 +35,13 @@ namespace CrossCode2D.UI
             HPFill3.fillAmount = currentHealth / maxHealth;
 
             HPText.text = $"{currentHealth}";
+        }
+
+        public void UpdateStats(int level, float attack, float defense)
+        {
+            LevelText.text = player.stats.level.ToString();
+            AttackText.text = player.stats.attack.ToString();
+            DefenseText.text = player.stats.defense.ToString();
         }
     }
 }
