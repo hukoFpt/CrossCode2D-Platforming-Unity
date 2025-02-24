@@ -12,11 +12,10 @@ namespace CrossCode2D.Player
         private SpriteRenderer spriteRenderer;
         private Collider2D attackCollider;
         private Vector2 direction;
+        private Player player;
 
         public float speed = 10f;
-        public float damage = 10f;
         public float lifetime = 5f;
-        public Guid projectileId; // Unique identifier for each projectile
         private string currentElement;
         private bool isCharged;
 
@@ -25,9 +24,9 @@ namespace CrossCode2D.Player
             animator = GetComponent<Animator>();
             rigidbody = GetComponent<Rigidbody2D>();
             spriteRenderer = GetComponent<SpriteRenderer>();
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
             attackCollider = GetComponent<Collider2D>();
             attackCollider.isTrigger = true;
-            projectileId = Guid.NewGuid(); // Assign a unique ID to each projectile
         }
 
         private void Update()
@@ -55,11 +54,10 @@ namespace CrossCode2D.Player
         {
             if (collision.CompareTag("Enemy"))
             {
-                IEnemy enemy = collision.GetComponent<IEnemy>();
+                Enemy enemy = collision.GetComponent<Enemy>();
                 if (enemy != null)
                 {
-                    enemy.TakeDamage(damage);
-                    Debug.Log($"Player attacked {collision.name} and dealt {damage} damage.");
+                    enemy.TakeDamage(player.stats.attack, enemy.stats, currentElement, direction);
                 }
                 speed = 0;
                 StartCoroutine(PlayCollisionAnimationAndDestroy());

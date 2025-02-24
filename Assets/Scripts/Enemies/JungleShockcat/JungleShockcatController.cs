@@ -1,22 +1,17 @@
 using System.Collections;
 using UnityEngine;
-using CrossCode2D.Player;
 
 namespace CrossCode2D.Enemies
 {
     public class JungleShockcatController : MonoBehaviour
     {
+        public static JungleShockcatController Instance { get; private set; }
+
         private JungleShockcat jungleShockcat;
+        public bool isAttacking = false;
         public float walkSpeed = 2f;
-        public float changeDirectionTime = 2f;
-        public float maxDistanceFromSpawn = 3f; // Maximum distance from the initial spawn position
-        public float minStopTime = 1f; // Minimum time to stop
-        public float maxStopTime = 3f; // Maximum time to stop
-        public float knockbackForce = 5f; // Force applied for knockback
-        public float attackRange = 2f; // Range to detect the player for attack
-        public float preAttackDuration = 0.8f; // Duration of the PreAttack animation
-        public float teleportDistance = 4f; // Distance to teleport during attack
-        public float attackCooldown = 3f; // Cooldown duration for the attack;
+        public float knockbackForce = 5f;
+
         private Rigidbody2D rb;
         private Animator animator;
         private Vector2 walkDirection;
@@ -27,59 +22,94 @@ namespace CrossCode2D.Enemies
         private Color originalColor;
         private Transform playerTransform;
         private bool isOnCooldown;
+        private bool isKnockback;
+
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
 
         void Start()
         {
-            jungleShockcat = GetComponent<JungleShockcat>();
-            rb = GetComponent<Rigidbody2D>();
-            animator = GetComponent<Animator>();
-            spriteRenderer = GetComponent<SpriteRenderer>();
-
-            changeDirectionTimer = changeDirectionTime;
-            spawnPosition = transform.position; // Store the initial spawn position
-            
+            InitializeComponents();
             SetRandomDirection();
-
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform; // Find the player by tag
+            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         }
 
         void Update()
         {
+            HandleDirectionChange();
+            animator.SetBool("isWalking", walkDirection != Vector2.zero);
+            CheckForPlayerAndAttack();
+
+            if (isAttacking)
+            {
+                TargetPlayer();
+            }
+        }
+
+        void FixedUpdate()
+        {
+            Move();
+            FlipSprite();
+        }
+
+        private void InitializeComponents()
+        {
+            float changeDirectionTime = 2f;
+
+            jungleShockcat = GetComponent<JungleShockcat>();
+            rb = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            changeDirectionTimer = changeDirectionTime;
+            spawnPosition = transform.position;
+        }
+
+        private void HandleDirectionChange()
+        {
+            float changeDirectionTime = 2f;
+
             changeDirectionTimer -= Time.deltaTime;
             if (changeDirectionTimer <= 0 || IsBeyondMaxDistance())
             {
                 SetRandomDirection();
                 changeDirectionTimer = changeDirectionTime;
             }
-
-            animator.SetBool("isWalking", walkDirection != Vector2.zero);
-            CheckForPlayerAndAttack();
         }
 
-        void FixedUpdate()
+        private void Move()
         {
-            if (isStopped)
+            if (!isKnockback)
             {
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                if (isStopped)
+                {
+                    rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                }
+                else
+                {
+                    rb.linearVelocity = new Vector2(walkDirection.x * walkSpeed, rb.linearVelocity.y);
+                }
             }
-            else
-            {
-                rb.linearVelocity = new Vector2(walkDirection.x * walkSpeed, rb.linearVelocity.y);
-            }
-            FlipSprite();
         }
 
-        void SetRandomDirection()
+        private void SetRandomDirection()
         {
-            if (IsBeyondMaxDistance())
+            if (IsBeyondMaxDistance() && !isAttacking)
             {
-                // Move towards the spawn position if beyond max distance
                 walkDirection = (transform.position.x > spawnPosition.x) ? Vector2.left : Vector2.right;
             }
             else
             {
                 float randomValue = Random.Range(0f, 1f);
-                if (randomValue < 0.3f) // 30% chance to stop
+                if (randomValue < 0.3f)
                 {
                     StartCoroutine(StopForRandomTime());
                 }
@@ -90,8 +120,11 @@ namespace CrossCode2D.Enemies
             }
         }
 
-        IEnumerator StopForRandomTime()
+        private IEnumerator StopForRandomTime()
         {
+            float minStopTime = 1f;
+            float maxStopTime = 3f;
+
             isStopped = true;
             walkDirection = Vector2.zero;
             float stopTime = Random.Range(minStopTime, maxStopTime);
@@ -100,49 +133,22 @@ namespace CrossCode2D.Enemies
             SetRandomDirection();
         }
 
-        void FlipSprite()
+        private void FlipSprite()
         {
-            // Flip the sprite based on the direction
-            if (walkDirection == Vector2.left)
-            {
-                spriteRenderer.flipX = true;
-            }
-            else if (walkDirection == Vector2.right)
-            {
-                spriteRenderer.flipX = false;
-            }
+            spriteRenderer.flipX = walkDirection == Vector2.left;
         }
 
-        bool IsBeyondMaxDistance()
+        private bool IsBeyondMaxDistance()
         {
-            // Check if the enemy is beyond the maximum distance from the spawn position
+            float maxDistanceFromSpawn = 3f;
             return Vector2.Distance(spawnPosition, transform.position) > maxDistanceFromSpawn;
-        }
-
-        private IEnumerator FlashWhite()
-        {
-            if (spriteRenderer != null)
-            {
-                spriteRenderer.color = Color.gray; // Change color to white
-                yield return new WaitForSeconds(0.05f); // Wait for 0.2 seconds
-                spriteRenderer.color = originalColor; // Revert to original color
-            }
-        }
-
-        private void ApplyKnockback(Vector2 attackDirection)
-        {
-            // Apply knockback force in the opposite direction of the attack
-            Debug.Log("Applying knockback force. Direction: " + attackDirection + ", Force: " + knockbackForce);
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Reset horizontal velocity
-
-            // Apply knockback force only along the x-axis
-            Vector2 knockback = new Vector2(-attackDirection.x, 0).normalized * knockbackForce;
-            rb.AddForce(knockback, ForceMode2D.Impulse);
         }
 
         private void CheckForPlayerAndAttack()
         {
-            if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackRange && isOnCooldown == false)
+            float attackRange = 2f;
+
+            if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackRange && !isOnCooldown)
             {
                 StartCoroutine(PerformAttack());
             }
@@ -150,50 +156,21 @@ namespace CrossCode2D.Enemies
 
         private IEnumerator PerformAttack()
         {
+            float preAttackDuration = 0.8f;
+            float attackCooldown = 3f;
+
             isStopped = true;
             isOnCooldown = true;
 
-            // Face the player before performing the attack
-            if (playerTransform != null)
-            {
-                if (playerTransform.position.x < transform.position.x)
-                {
-                    walkDirection = Vector2.left;
-                    spriteRenderer.flipX = true;
-                }
-                else
-                {
-                    walkDirection = Vector2.right;
-                    spriteRenderer.flipX = false;
-                }
-            }
+            FacePlayer();
 
             animator.SetTrigger("PreAttack");
             yield return new WaitForSeconds(preAttackDuration);
             animator.SetBool("isAttacking", true);
 
-            // Calculate the new position after teleporting
-            Vector2 originalPosition = transform.position;
-            Vector2 newPosition = originalPosition + (spriteRenderer.flipX ? Vector2.left : Vector2.right) * teleportDistance;
+            Vector2 newPosition = CalculateNewPosition();
+            DealDamageToPlayerIfInRange(newPosition);
 
-            // Check if the player is between the original and new positions
-            if (playerTransform != null)
-            {
-                float playerPositionX = playerTransform.position.x;
-                float playerPositionY = playerTransform.position.y;
-                if (((originalPosition.x < playerPositionX && playerPositionX < newPosition.x) ||
-                    (newPosition.x < playerPositionX && playerPositionX < originalPosition.x)) &&
-                    Mathf.Abs(playerPositionY - transform.position.y) <= 1f)
-                {
-                    CrossCode2D.Player.Player player = playerTransform.GetComponent<CrossCode2D.Player.Player>();
-                    if (player != null)
-                    {
-                        player.TakeDamage(jungleShockcat.stats.attack);
-                    }
-                }
-            }
-
-            // Teleport to the new position
             transform.position = newPosition;
             yield return new WaitForSeconds(0.1f);
             animator.SetBool("isAttacking", false);
@@ -201,6 +178,73 @@ namespace CrossCode2D.Enemies
 
             yield return new WaitForSeconds(attackCooldown);
             isOnCooldown = false;
+        }
+
+        private void FacePlayer()
+        {
+            if (playerTransform != null)
+            {
+                walkDirection = playerTransform.position.x < transform.position.x ? Vector2.left : Vector2.right;
+                spriteRenderer.flipX = walkDirection == Vector2.left;
+            }
+        }
+
+        private Vector2 CalculateNewPosition()
+        {
+            float teleportDistance = 4f;
+            return transform.position + new Vector3((spriteRenderer.flipX ? Vector2.left : Vector2.right).x * teleportDistance, 0, 0);
+        }
+
+        private void DealDamageToPlayerIfInRange(Vector2 newPosition)
+        {
+            if (playerTransform != null)
+            {
+                float playerPositionX = playerTransform.position.x;
+                float playerPositionY = playerTransform.position.y;
+                if (IsPlayerBetweenPositions(transform.position, newPosition, playerPositionX) && Mathf.Abs(playerPositionY - transform.position.y) <= 1f)
+                {
+                    Player.Player player = playerTransform.GetComponent<Player.Player>();
+                    player?.TakeDamage(jungleShockcat.stats.attack);
+                }
+            }
+        }
+
+        private bool IsPlayerBetweenPositions(Vector2 originalPosition, Vector2 newPosition, float playerPositionX)
+        {
+            return (originalPosition.x < playerPositionX && playerPositionX < newPosition.x) ||
+                   (newPosition.x < playerPositionX && playerPositionX < originalPosition.x);
+        }
+
+        // Function to always target the player when isAttacking is true
+        private void TargetPlayer()
+        {
+            if (playerTransform != null)
+            {
+                Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
+                rb.linearVelocity = new Vector2(directionToPlayer.x * walkSpeed, rb.linearVelocity.y);
+            }
+        }
+
+        // Apply knockback to the enemy
+        public void ApplyKnockback(Vector2 direction, float force)
+        {
+            StartCoroutine(ApplyKnockbackCoroutine(direction, force));
+        }
+
+        private IEnumerator ApplyKnockbackCoroutine(Vector2 direction, float force)
+        {
+            isKnockback = true;
+            jungleShockcat.ApplyKnockback(direction, force); // Call the ApplyKnockback method from the Enemy class
+            yield return new WaitForSeconds(0.2f); // Adjust the duration as needed
+            isKnockback = false;
+        }
+
+        // Test method to apply knockback with a fixed direction
+        public void TestApplyKnockback()
+        {
+            Vector2 testDirection = Vector2.right; // Change this to test different directions
+            float testForce = 10f; // Change this to test different force values
+            ApplyKnockback(testDirection, testForce);
         }
     }
 }

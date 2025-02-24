@@ -1,20 +1,25 @@
 using System.Collections;
 using UnityEngine;
 using CrossCode2D.Enemies;
+using CrossCode2D.Player;
 
 public class AttackEffectController : MonoBehaviour
 {
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Collider2D attackCollider;
-    private CrossCode2D.Player.Player player;
+    private Player player;
+    private HandleAttack handleAttack;
+
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         attackCollider = GetComponent<Collider2D>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<CrossCode2D.Player.Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        handleAttack = player.GetComponent<HandleAttack>();
+
         if (attackCollider == null)
         {
             attackCollider = gameObject.AddComponent<BoxCollider2D>();
@@ -79,12 +84,11 @@ public class AttackEffectController : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            IEnemy enemy = collision.GetComponent<IEnemy>();
+            Enemy enemy = collision.GetComponent<Enemy>();
             if (enemy != null)
             {
                 Vector2 attackDirection = (collision.transform.position - transform.position).normalized;
-                enemy.TakeDamage(player.stats.attack);
-                Debug.Log($"Player attacked {collision.name} and dealt {player.stats.attack} damage.");
+                enemy.TakeDamage(player.stats.attack, enemy.stats, handleAttack.currentElement.ToString(), attackDirection);
             }
         }
     }
