@@ -10,10 +10,10 @@ namespace CrossCode2D.UI
         public Image HPFill1;
         public Image HPFill2;
         public Image HPFill3;
-        public TMP_Text HPText;
-        public TMP_Text LevelText;
-        public TMP_Text AttackText;
-        public TMP_Text DefenseText;
+        public Text HPText;
+        public Text LevelText;
+        public Text AttackText;
+        public Text DefenseText;
 
         private CrossCode2D.Player.Player player;
 

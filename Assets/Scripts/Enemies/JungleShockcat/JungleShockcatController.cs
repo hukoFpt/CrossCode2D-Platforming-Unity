@@ -1,28 +1,34 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 
 namespace CrossCode2D.Enemies
 {
     public class JungleShockcatController : MonoBehaviour
     {
         public static JungleShockcatController Instance { get; private set; }
-
         private JungleShockcat jungleShockcat;
-        public bool isAttacking = false;
-        public float walkSpeed = 2f;
-        public float knockbackForce = 5f;
 
         private Rigidbody2D rb;
         private Animator animator;
-        private Vector2 walkDirection;
-        private float changeDirectionTimer;
         private SpriteRenderer spriteRenderer;
-        private Vector2 spawnPosition;
-        private bool isStopped;
-        private Color originalColor;
+
+        public float moveSpeed = 2f;
+        private Vector2 leftBoundary;
+        private Vector2 rightBoundary;
+        private bool movingRight = true;
+        private bool isStopped = false;
+        private bool isAttacking = false;
+
         private Transform playerTransform;
-        private bool isOnCooldown;
-        private bool isKnockback;
+        public float attackDistance = 4f;
+        public float dashAttackDistance = 1f; // Distance to check for damage during DashAttack
+
+        private Collider2D playerCollider;
+        private Collider2D shockcatCollider;
+
+        private bool hasDealtDamage = false; // Flag to track if damage has been dealt during the current attack
+        public float attackCooldown = 5f; // Cooldown duration for the attack
+        private bool isOnCooldown = false; // Flag to track if the attack is on cooldown
 
         private void Awake()
         {
@@ -39,212 +45,200 @@ namespace CrossCode2D.Enemies
         void Start()
         {
             InitializeComponents();
-            SetRandomDirection();
-            playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+            SetBoundaries();
+            StartCoroutine(RandomStopCoroutine());
+
+            // Find the player using the tag
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+                playerCollider = player.GetComponent<Collider2D>();
+            }
+
+            shockcatCollider = GetComponent<Collider2D>();
         }
 
         void Update()
         {
-            HandleDirectionChange();
-            animator.SetBool("isWalking", walkDirection != Vector2.zero);
-            CheckForPlayerAndAttack();
-
-            if (isAttacking)
-            {
-                TargetPlayer();
-            }
+            CheckPlayerDistance();
+            HandlePatrol();
         }
 
         void FixedUpdate()
         {
-            Move();
-            FlipSprite();
+            HandleFixedMove();
         }
 
         private void InitializeComponents()
         {
-            float changeDirectionTime = 2f;
-
             jungleShockcat = GetComponent<JungleShockcat>();
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             spriteRenderer = GetComponent<SpriteRenderer>();
-            changeDirectionTimer = changeDirectionTime;
-            spawnPosition = transform.position;
         }
 
-        private void HandleDirectionChange()
+        private void SetBoundaries()
         {
-            float changeDirectionTime = 2f;
-
-            changeDirectionTimer -= Time.deltaTime;
-            if (changeDirectionTimer <= 0 || IsBeyondMaxDistance())
-            {
-                SetRandomDirection();
-                changeDirectionTimer = changeDirectionTime;
-            }
+            leftBoundary = new Vector2(transform.position.x - 5f, transform.position.y);
+            rightBoundary = new Vector2(transform.position.x + 5f, transform.position.y);
         }
 
-        private void Move()
+        private void HandlePatrol()
         {
-            if (!isKnockback)
+            if (isStopped || isAttacking) return;
+
+            if (movingRight)
             {
-                if (isStopped)
+                if (transform.position.x >= rightBoundary.x)
                 {
-                    rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+                    movingRight = false;
                 }
-                else
-                {
-                    rb.linearVelocity = new Vector2(walkDirection.x * walkSpeed, rb.linearVelocity.y);
-                }
-            }
-        }
-
-        private void SetRandomDirection()
-        {
-            if (IsBeyondMaxDistance() && !isAttacking)
-            {
-                walkDirection = (transform.position.x > spawnPosition.x) ? Vector2.left : Vector2.right;
             }
             else
             {
-                float randomValue = Random.Range(0f, 1f);
-                if (randomValue < 0.3f)
+                if (transform.position.x <= leftBoundary.x)
                 {
-                    StartCoroutine(StopForRandomTime());
-                }
-                else
-                {
-                    walkDirection = Random.Range(0, 2) == 0 ? Vector2.left : Vector2.right;
+                    movingRight = true;
                 }
             }
         }
 
-        private IEnumerator StopForRandomTime()
+        private void HandleFixedMove()
         {
-            float minStopTime = 1f;
-            float maxStopTime = 3f;
-
-            isStopped = true;
-            walkDirection = Vector2.zero;
-            float stopTime = Random.Range(minStopTime, maxStopTime);
-            yield return new WaitForSeconds(stopTime);
-            isStopped = false;
-            SetRandomDirection();
-        }
-
-        private void FlipSprite()
-        {
-            spriteRenderer.flipX = walkDirection == Vector2.left;
-        }
-
-        private bool IsBeyondMaxDistance()
-        {
-            float maxDistanceFromSpawn = 3f;
-            return Vector2.Distance(spawnPosition, transform.position) > maxDistanceFromSpawn;
-        }
-
-        private void CheckForPlayerAndAttack()
-        {
-            float attackRange = 2f;
-
-            if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackRange && !isOnCooldown)
+            if (!isStopped && !isAttacking)
             {
-                StartCoroutine(PerformAttack());
+                float direction = movingRight ? 1 : -1;
+                rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+
+                // Set the isWalking parameter in the animator
+                animator.SetBool("isWalking", rb.linearVelocity.x != 0);
+
+                // Flip the sprite based on movement direction
+                if (rb.linearVelocity.x != 0)
+                {
+                    spriteRenderer.flipX = rb.linearVelocity.x < 0;
+                }
+            }
+            else if (!isAttacking)
+            {
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
+                // Set the isWalking parameter in the animator
+                animator.SetBool("isWalking", false);
             }
         }
 
-        private IEnumerator PerformAttack()
+        private void CheckPlayerDistance()
         {
-            float preAttackDuration = 0.8f;
-            float attackCooldown = 3f;
+            if (playerTransform != null && Vector2.Distance(transform.position, playerTransform.position) <= attackDistance)
+            {
+                if (!isAttacking && !isOnCooldown)
+                {
+                    StartCoroutine(PreAttack());
+                }
+            }
+        }
 
-            isStopped = true;
-            isOnCooldown = true;
-
-            FacePlayer();
-
+        private IEnumerator PreAttack()
+        {
+            isAttacking = true;
             animator.SetTrigger("PreAttack");
-            yield return new WaitForSeconds(preAttackDuration);
-            animator.SetBool("isAttacking", true);
 
-            Vector2 newPosition = CalculateNewPosition();
-            DealDamageToPlayerIfInRange(newPosition);
+            // Flip the sprite to face the player
+            if (playerTransform.position.x > transform.position.x)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else
+            {
+                spriteRenderer.flipX = true;
+            }
 
-            transform.position = newPosition;
-            yield return new WaitForSeconds(0.1f);
-            animator.SetBool("isAttacking", false);
-            isStopped = false;
+            yield return new WaitForSeconds(2f); // Pre-attack duration
 
+            StartCoroutine(DashAttack());
+        }
+
+        private IEnumerator DashAttack()
+        {
+            animator.SetBool("isDashAttack", true);
+            float originalSpeed = moveSpeed;
+            moveSpeed = 25f;
+            float direction = playerTransform.position.x > transform.position.x ? 1 : -1;
+
+            // Temporarily disable collision with the player
+            Physics2D.IgnoreCollision(shockcatCollider, playerCollider, true);
+
+            rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+
+            float dashTime = 0.3f; // Duration of the dash attack
+            float elapsedTime = 0f;
+
+            hasDealtDamage = false; // Reset the damage flag at the start of the attack
+
+            while (elapsedTime < dashTime)
+            {
+                elapsedTime += Time.deltaTime;
+
+                // Check if the player is within the dash attack distance and if damage has not been dealt yet
+                if (!hasDealtDamage && Vector2.Distance(transform.position, playerTransform.position) <= dashAttackDistance)
+                {
+                    playerTransform.GetComponent<CrossCode2D.Player.Player>().TakeDamage(jungleShockcat.stats.attack);
+                    hasDealtDamage = true; // Set the flag to true after dealing damage
+                }
+
+                yield return null;
+            }
+
+            // Re-enable collision with the player
+            Physics2D.IgnoreCollision(shockcatCollider, playerCollider, false);
+
+            moveSpeed = originalSpeed;
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isDashAttack", false);
+            isAttacking = false;
+
+            // Start the cooldown
+            StartCoroutine(AttackCooldown());
+        }
+
+        private IEnumerator AttackCooldown()
+        {
+            isOnCooldown = true;
             yield return new WaitForSeconds(attackCooldown);
             isOnCooldown = false;
         }
 
-        private void FacePlayer()
+        private IEnumerator RandomStopCoroutine()
         {
-            if (playerTransform != null)
+            while (true)
             {
-                walkDirection = playerTransform.position.x < transform.position.x ? Vector2.left : Vector2.right;
-                spriteRenderer.flipX = walkDirection == Vector2.left;
+                yield return new WaitForSeconds(Random.Range(2f, 5f)); // Random stop interval
+                isStopped = true;
+                yield return new WaitForSeconds(Random.Range(1f, 3f)); // Random stop duration
+                isStopped = false;
             }
         }
 
-        private Vector2 CalculateNewPosition()
+        public void SetMoveSpeed(float speed)
         {
-            float teleportDistance = 4f;
-            return transform.position + new Vector3((spriteRenderer.flipX ? Vector2.left : Vector2.right).x * teleportDistance, 0, 0);
+            moveSpeed = speed;
         }
 
-        private void DealDamageToPlayerIfInRange(Vector2 newPosition)
+        // Draw a sphere with a radius of 4f to visualize the attack distance
+        private void OnDrawGizmosSelected()
         {
-            if (playerTransform != null)
-            {
-                float playerPositionX = playerTransform.position.x;
-                float playerPositionY = playerTransform.position.y;
-                if (IsPlayerBetweenPositions(transform.position, newPosition, playerPositionX) && Mathf.Abs(playerPositionY - transform.position.y) <= 1f)
-                {
-                    Player.Player player = playerTransform.GetComponent<Player.Player>();
-                    player?.TakeDamage(jungleShockcat.stats.attack);
-                }
-            }
-        }
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, attackDistance);
 
-        private bool IsPlayerBetweenPositions(Vector2 originalPosition, Vector2 newPosition, float playerPositionX)
-        {
-            return (originalPosition.x < playerPositionX && playerPositionX < newPosition.x) ||
-                   (newPosition.x < playerPositionX && playerPositionX < originalPosition.x);
-        }
+            // Draw a blue line to visualize 1f distance in the x-axis
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, new Vector3(transform.position.x + 1f, transform.position.y, transform.position.z));
 
-        // Function to always target the player when isAttacking is true
-        private void TargetPlayer()
-        {
-            if (playerTransform != null)
-            {
-                Vector2 directionToPlayer = (playerTransform.position - transform.position).normalized;
-                rb.linearVelocity = new Vector2(directionToPlayer.x * walkSpeed, rb.linearVelocity.y);
-            }
-        }
-
-        // Apply knockback to the enemy
-        public void ApplyKnockback(Vector2 direction, float force)
-        {
-            StartCoroutine(ApplyKnockbackCoroutine(direction, force));
-        }
-
-        private IEnumerator ApplyKnockbackCoroutine(Vector2 direction, float force)
-        {
-            isKnockback = true;
-            jungleShockcat.ApplyKnockback(direction, force); // Call the ApplyKnockback method from the Enemy class
-            yield return new WaitForSeconds(0.2f); // Adjust the duration as needed
-            isKnockback = false;
-        }
-
-        // Test method to apply knockback with a fixed direction
-        public void TestApplyKnockback()
-        {
-            Vector2 testDirection = Vector2.right; // Change this to test different directions
-            float testForce = 10f; // Change this to test different force values
-            ApplyKnockback(testDirection, testForce);
+            // Draw a blue line to visualize 0.5f thickness in the y-axis
+            Gizmos.DrawLine(new Vector3(transform.position.x, transform.position.y - 0.25f, transform.position.z),
+                            new Vector3(transform.position.x, transform.position.y + 0.25f, transform.position.z));
         }
     }
 }
