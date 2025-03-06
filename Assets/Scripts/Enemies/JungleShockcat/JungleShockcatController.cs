@@ -30,18 +30,6 @@ namespace CrossCode2D.Enemies
         public float attackCooldown = 5f; // Cooldown duration for the attack
         private bool isOnCooldown = false; // Flag to track if the attack is on cooldown
 
-        private void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
         void Start()
         {
             InitializeComponents();

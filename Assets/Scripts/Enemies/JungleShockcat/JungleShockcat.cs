@@ -2,20 +2,6 @@ namespace CrossCode2D.Enemies
 {
     public class JungleShockcat : Enemy
     {
-        public static JungleShockcat Instance { get; private set; }
-
-        protected void Awake()
-        {
-            if (Instance == null)
-            {
-                Instance = this;
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
-        }
-
         protected override void Start()
         {
             base.Start();

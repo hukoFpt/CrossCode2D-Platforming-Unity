@@ -2,13 +2,15 @@ using UnityEngine;
 
 namespace CrossCode2D.Player
 {
-
     public class Player : MonoBehaviour
     {
         public PlayerStats stats = new PlayerStats();
+        private HandleMovement handleMovement;
+
         void Start()
         {
             stats.InitializeStats();
+            handleMovement = GetComponent<HandleMovement>(); // Get the HandleMovement component
         }
 
         void Update()
@@ -40,6 +42,15 @@ namespace CrossCode2D.Player
         public void Die()
         {
             Debug.Log("Player died!");
+        }
+
+        // Method to disable player controls and trigger the "Complete" animation
+        public void DisableControlsAndComplete()
+        {
+            if (handleMovement != null)
+            {
+                handleMovement.DisableControlsAndComplete();
+            }
         }
     }
 }

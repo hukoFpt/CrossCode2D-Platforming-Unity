@@ -6,13 +6,13 @@ namespace CrossCode2D.Player
 {
     public class HandleMovement : MonoBehaviour
     {
-        //Initialise variables components
+        // Initialize variables components
         private Rigidbody2D rb;
         private Animator animator;
         private Vector2 movement;
         private SpriteRenderer spriteRenderer;
 
-        // Initialise variables
+        // Initialize variables
         public float moveSpeed = 5.0f;
 
         // Dash-related variables
@@ -23,6 +23,8 @@ namespace CrossCode2D.Player
         private bool isGrounded = false;
         private float jumpForce = 800f;
 
+        // Control-related variables
+        private bool controlsEnabled = true;
 
         // Start is called before the first frame update
         void Start()
@@ -35,15 +37,21 @@ namespace CrossCode2D.Player
         // Update is called once per frame
         void Update()
         {
-            HandleMove();
-            HandleDash();
-            HandleJump();
+            if (controlsEnabled)
+            {
+                HandleMove();
+                HandleDash();
+                HandleJump();
+            }
         }
 
         // Fixed update is called once per physics update
         void FixedUpdate()
         {
-            HandleFixedMove();
+            if (controlsEnabled)
+            {
+                HandleFixedMove();
+            }
         }
 
         // Handle player movement
@@ -63,11 +71,13 @@ namespace CrossCode2D.Player
                 animator.SetFloat("Speed", 0);
             }
         }
+
         public void HandleFixedMove()
         {
             // Move the player
             rb.linearVelocity = new Vector2(movement.x * moveSpeed, rb.linearVelocity.y);
         }
+
         public void SetPlayerSpeed(float speed)
         {
             // Set the player speed
@@ -102,26 +112,27 @@ namespace CrossCode2D.Player
                 StartCoroutine(DashCooldown(0.8f));
                 StartCoroutine(DashDelay(0.4f));
             }
-
-            IEnumerator SetSpeedForDuration(float speed, float duration)
-            {
-                SetPlayerSpeed(speed);
-                yield return new WaitForSeconds(duration);
-                SetPlayerSpeed(5f);
-                animator.SetBool("IsDashing", false);
-            }
-            IEnumerator DashDelay(float duration)
-            {
-                yield return new WaitForSeconds(duration);
-                isDashing = false;
-            }
-            IEnumerator DashCooldown(float duration)
-            {
-                yield return new WaitForSeconds(duration);
-                isCooldown = false;
-            }
         }
 
+        private IEnumerator SetSpeedForDuration(float speed, float duration)
+        {
+            SetPlayerSpeed(speed);
+            yield return new WaitForSeconds(duration);
+            SetPlayerSpeed(5f);
+            animator.SetBool("IsDashing", false);
+        }
+
+        private IEnumerator DashDelay(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            isDashing = false;
+        }
+
+        private IEnumerator DashCooldown(float duration)
+        {
+            yield return new WaitForSeconds(duration);
+            isCooldown = false;
+        }
 
         // Handle player jump
         public void HandleJump()
@@ -135,11 +146,11 @@ namespace CrossCode2D.Player
 
             if (isGrounded)
             {
-                animator.SetFloat("yVelocity", 0f);
+                animator.SetFloat("ylinearVelocity", 0f);
             }
             else
             {
-                animator.SetFloat("yVelocity", rb.linearVelocity.y);
+                animator.SetFloat("ylinearVelocity", rb.linearVelocity.y);
             }
         }
 
@@ -150,6 +161,17 @@ namespace CrossCode2D.Player
                 isGrounded = true;
                 animator.SetBool("IsJumping", false);
             }
+        }
+
+        // Method to disable player controls and trigger the "Complete" animation
+        public void DisableControlsAndComplete()
+        {
+            controlsEnabled = false;
+            rb.linearVelocity = Vector2.zero; // Stop player movement
+            animator.SetFloat("Speed", 0f);
+            animator.SetBool("IsJumping", false);
+            animator.SetBool("IsDashing", false);
+            animator.SetTrigger("Complete"); // Trigger the "Complete" animation
         }
     }
 }

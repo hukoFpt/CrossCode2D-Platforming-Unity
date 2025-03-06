@@ -87,9 +87,9 @@ namespace CrossCode2D.Player
 
         public void InitializeStats()
         {
-            maxHP = levelToMaxHP[level];
-            attack = levelToAttack[level];
-            defense = levelToDefense[level];
+            maxHP = levelToMaxHP[level] + level *3;
+            attack = levelToAttack[level] + level *2;
+            defense = levelToDefense[level] + level * 2;
             currentHP = maxHP;
         }
     }
