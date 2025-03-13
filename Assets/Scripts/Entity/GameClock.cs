@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine.Networking;
 
 public class GameClock : MonoBehaviour
@@ -43,17 +42,17 @@ public class GameClock : MonoBehaviour
         isRunning = false;
     }
 
-    public void UploadPlayTime(string apiUrl)
+    public void UploadPlayTime(string apiUrl, string playerName)
     {
         Debug.Log("Uploading play time...");
-        StartCoroutine(UploadPlayTimeCoroutine(apiUrl));
+        StartCoroutine(UploadPlayTimeCoroutine(apiUrl, playerName));
     }
 
-    private IEnumerator UploadPlayTimeCoroutine(string apiUrl)
+    private IEnumerator UploadPlayTimeCoroutine(string apiUrl, string playerName)
     {
         WWWForm form = new WWWForm();
         form.AddField("time", playTime.ToString());
-        form.AddField("name", "Huko");
+        form.AddField("name", playerName);
 
         using (UnityWebRequest www = UnityWebRequest.Post(apiUrl, form))
         {

@@ -146,11 +146,11 @@ namespace CrossCode2D.Player
 
             if (isGrounded)
             {
-                animator.SetFloat("ylinearVelocity", 0f);
+                animator.SetFloat("yVelocity", 0f);
             }
             else
             {
-                animator.SetFloat("ylinearVelocity", rb.linearVelocity.y);
+                animator.SetFloat("yVelocity", rb.linearVelocity.y);
             }
         }
 

@@ -5,19 +5,21 @@ public class MainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        // Load the game scene (replace "NoahsPark" with the name of your game scene)
         SceneManager.LoadScene("NoahsPark");
     }
 
     public void OpenLeaderboard()
     {
-        // Placeholder for the leaderboard functionality
-        Debug.Log("Leaderboard opened");
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void OpenMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void ExitGame()
     {
-        // Quit the game
         Debug.Log("Game is quitting");
         Application.Quit();
     }
