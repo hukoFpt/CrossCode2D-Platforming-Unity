@@ -6,11 +6,17 @@ namespace CrossCode2D.Player
     {
         public PlayerStats stats = new PlayerStats();
         private HandleMovement handleMovement;
+        public GameObject deadSceneCanvas; // Reference to the DeadScene canvas
 
         void Start()
         {
             stats.InitializeStats();
             handleMovement = GetComponent<HandleMovement>(); // Get the HandleMovement component
+
+            if (deadSceneCanvas != null)
+            {
+                deadSceneCanvas.SetActive(false); // Deactivate the DeadScene canvas at the start
+            }
         }
 
         void Update()
@@ -42,6 +48,12 @@ namespace CrossCode2D.Player
         public void Die()
         {
             Debug.Log("Player died!");
+            if (deadSceneCanvas != null)
+            {
+                deadSceneCanvas.SetActive(true); // Activate the DeadScene canvas
+            }
+            stats.currentHP = 0;
+            Time.timeScale = 0;
         }
 
         // Method to disable player controls and trigger the "Complete" animation
