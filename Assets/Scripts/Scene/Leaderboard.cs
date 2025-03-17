@@ -6,8 +6,8 @@ using UnityEngine.Networking;
 
 public class Leaderboard : MonoBehaviour
 {
-    public Text leaderboardText; // Reference to the Text element to display the leaderboard
-
+    public Text leaderboardNameText;
+    public Text leaderboardTimeText; 
     private void Start()
     {
         StartCoroutine(FetchLeaderboardData());
@@ -51,11 +51,42 @@ public class Leaderboard : MonoBehaviour
 
     private void DisplayLeaderboard(List<LeaderboardEntry> leaderboardEntries)
     {
+        leaderboardNameText.text = ""; 
+        leaderboardTimeText.text = ""; 
+
         for (int i = 0; i < leaderboardEntries.Count; i++)
         {
             LeaderboardEntry entry = leaderboardEntries[i];
-            leaderboardText.text += $"{i + 1}. {entry.name}: {FormatTime(entry.time)}\n";
+            string colorTag = "";
+            string positionSuffix = GetPositionSuffix(i + 1);
+
+            switch (i)
+            {
+                case 0:
+                    colorTag = "<color=#FFD700>";
+                    break;
+                case 1:
+                    colorTag = "<color=#C0C0C0>";
+                    break;
+                case 2:
+                    colorTag = "<color=#CD7F32>";
+                    break;
+                default:
+                    colorTag = "<color=#FFFFFF>";
+                    break;
+            }
+
+            leaderboardNameText.text += $"{colorTag}{i + 1}{positionSuffix}. {entry.name}</color>\n";
+            leaderboardTimeText.text += $"{colorTag}{FormatTime(entry.time)}</color>\n";
         }
+    }
+
+    private string GetPositionSuffix(int position)
+    {
+        if (position % 10 == 1 && position != 11) return "st";
+        if (position % 10 == 2 && position != 12) return "nd";
+        if (position % 10 == 3 && position != 13) return "rd";
+        return "th";
     }
 
     private string FormatTime(float time)
